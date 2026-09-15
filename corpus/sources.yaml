@@ -1,0 +1,429 @@
+# corpus/sources.yaml
+#
+# The source registry for the PMM OS corpus. Every fact in corpus/*.md traces
+# back to a source listed here. The corpus-refresh skill reads this file to
+# decide what to refetch, when, and which corpus file each source feeds.
+#
+# Fields per source:
+#   url          - the public URL (public sources only)
+#   tier         - primary   = Dynatrace's own words / official docs / official blog
+#                  secondary = community, third-party, or indirect
+#   cadence      - how often corpus-refresh should refetch: weekly | monthly | quarterly
+#   owner_file   - the corpus/*.md file this source feeds
+#   last_fetched - ISO date of the last successful fetch, or null if never / failed
+#   cache        - filename under corpus/.cache/ holding the diff baseline
+#   status       - ok | blocked | never-fetched   (optional; default ok)
+#   notes        - optional free text
+
+sources:
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability
+    tier: primary
+    cadence: monthly
+    owner_file: product-truth.md
+    last_fetched: 2026-08-28
+    cache: docs-observe-dynatrace-for-ai-observability.txt
+    status: ok
+    notes: Re-fetched 2026-08-28 to resolve the layer-framework and integration-count
+      questions. No substantive page change vs. baseline; cache not overwritten.
+
+  - url: https://www.dynatrace.com/hub/?filter=ai-ml-observability
+    tier: primary
+    cadence: weekly
+    owner_file: product-truth.md
+    last_fetched: 2026-08-27
+    cache: hub-ai-ml-observability.txt
+    status: ok
+    notes: Integration catalog; changes often as new tiles ship.
+
+  - url: https://community.dynatrace.com/t5/AI/bd-p/AI
+    tier: secondary
+    cadence: weekly
+    owner_file: gaps.md
+    last_fetched: null
+    cache: community-ai-board.txt
+    status: blocked
+    notes: Cloudflare bot challenge blocks WebFetch and curl. Needs headful/manual fetch.
+
+  - url: https://www.dynatrace.com/news/blog/why-ai-agents-need-an-ai-lakehouse-in-the-modern-enterprise/
+    tier: primary
+    cadence: quarterly
+    owner_file: positioning.md
+    last_fetched: 2026-08-27
+    cache: blog-why-ai-agents-need-an-ai-lakehouse.txt
+    status: ok
+    notes: Static blog post; low change rate. Author Bernd Greifeneder.
+
+  - url: https://www.dynatrace.com/news/blog/dynatrace-intends-to-acquire-arize/
+    tier: primary
+    cadence: monthly
+    owner_file: arize.md
+    last_fetched: 2026-08-27
+    cache: blog-dynatrace-intends-to-acquire-arize.txt
+    status: ok
+    notes: Watch for deal-close update / follow-on posts. Author Steve Tack.
+
+  - url: https://www.dynatrace.com/platform/artificial-intelligence/
+    tier: primary
+    cadence: monthly
+    owner_file: product-truth.md
+    last_fetched: 2026-08-27
+    cache: platform-artificial-intelligence.txt
+    status: ok
+    notes: Resolves to the "Dynatrace Intelligence" positioning page; overlaps docs-dynatrace-intelligence.
+
+  - url: https://www.dynatrace.com/solutions/ai-observability/
+    tier: primary
+    cadence: monthly
+    owner_file: product-truth.md
+    last_fetched: 2026-08-28
+    cache: solutions-ai-observability.txt
+    status: ok
+    notes: Source of the seven-layer framework and customer quotes. Re-fetched 2026-08-28;
+      confirmed as the canonical framework framing. No substantive page change; cache not overwritten.
+
+  - url: https://docs.dynatrace.com/docs/dynatrace-intelligence
+    tier: primary
+    cadence: monthly
+    owner_file: product-truth.md
+    last_fetched: 2026-08-27
+    cache: docs-dynatrace-intelligence.txt
+    status: ok
+
+  - url: https://www.dynatrace.com/news/blog/sre-best-practices-platform-engineering-trends/
+    tier: primary
+    cadence: quarterly
+    owner_file: proof-points.md
+    last_fetched: null
+    cache: blog-sre-best-practices-platform-engineering-trends.txt
+    status: never-fetched
+    notes: Surfaced from the news RSS feed on 2026-08-27; cited from the RSS summary only.
+      Full post not yet fetched - do this on next refresh to capture the underlying stats.
+
+  - url: https://www.dynatrace.com/news/blog/how-to-measure-ai-roi-with-business-observability/
+    tier: primary
+    cadence: quarterly
+    owner_file: positioning.md
+    last_fetched: null
+    cache: blog-how-to-measure-ai-roi-with-business-observability.txt
+    status: never-fetched
+    notes: Surfaced from the news RSS feed on 2026-08-27. Business Impact layer / ROI framing.
+      Not yet fetched.
+
+  # Dynatrace AI Observability doc tree (captured 2026-09-03)
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/ai-observability-app
+    tier: primary
+    cadence: monthly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-ai-observability-app.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/terms-and-concepts
+    tier: secondary
+    cadence: quarterly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-terms-and-concepts.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/metrics-reference
+    tier: primary
+    cadence: monthly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-metrics-reference.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/frequently-asked-questions
+    tier: secondary
+    cadence: monthly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-frequently-asked-questions.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/agent-evaluations
+    tier: primary
+    cadence: monthly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-agent-evaluations.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/sample-use-cases
+    tier: secondary
+    cadence: quarterly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-sample-use-cases.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/sample-use-cases/ab-model-testing
+    tier: secondary
+    cadence: quarterly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-sample-use-cases-ab-model-testing.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/sample-use-cases/data-governance
+    tier: secondary
+    cadence: quarterly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-sample-use-cases-data-governance.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/sample-use-cases/self-service-ai-observability-tutorial
+    tier: secondary
+    cadence: quarterly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-sample-use-cases-self-service-ai-observability-tutorial.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/sample-use-cases/end-to-end-observability
+    tier: secondary
+    cadence: quarterly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-sample-use-cases-end-to-end-observability.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/sample-use-cases/openai-observability
+    tier: secondary
+    cadence: quarterly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-sample-use-cases-openai-observability.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/sample-use-cases/conversation-and-session-tracking
+    tier: secondary
+    cadence: quarterly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-sample-use-cases-conversation-and-session-tracking.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/get-started
+    tier: primary
+    cadence: monthly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-get-started.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/get-started/oneagent
+    tier: primary
+    cadence: monthly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-get-started-oneagent.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/get-started/openllmetry
+    tier: primary
+    cadence: monthly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-get-started-openllmetry.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/get-started/openinference
+    tier: primary
+    cadence: monthly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-get-started-openinference.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/get-started/opentelemetry
+    tier: primary
+    cadence: monthly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-get-started-opentelemetry.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/get-started/llm-judge-evaluation
+    tier: primary
+    cadence: monthly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-get-started-llm-judge-evaluation.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/integrations
+    tier: primary
+    cadence: weekly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-integrations.txt
+    status: ok
+
+  - url: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability/integrations/microsoft-agent-framework
+    tier: secondary
+    cadence: monthly
+    owner_file: dynatrace-docs-ai-observability.md
+    last_fetched: 2026-09-03
+    cache: docs-observe-dynatrace-for-ai-observability-integrations-microsoft-agent-framework.txt
+    status: ok
+
+  - url: https://www.dynatrace.com/news/blog/evaluate-llm-and-agent-quality-in-dynatrace-ai-observability/
+    tier: primary
+    cadence: quarterly
+    owner_file: product-truth.md
+    last_fetched: 2026-09-15
+    cache: blog-evaluate-llm-and-agent-quality.txt
+    status: ok
+    notes: >
+      Kristof Muhi (Principal PM), published 2026-06-11, updated 2026-06-25.
+      Confirms 15 built-in dt-evals evaluators (resolves gaps.md video-transcript
+      conflict #1), offline/online eval modes, CI gating, alert config (Slack/email),
+      dtctl CLI, judge providers.
+
+  - url: https://www.dynatrace.com/news/blog/dynatrace-intelligence-at-the-core-of-autonomous-operations/
+    tier: primary
+    cadence: quarterly
+    owner_file: product-truth.md
+    last_fetched: 2026-09-15
+    cache: blog-dynatrace-intelligence-at-the-core-of-autonomous-operations.txt
+    status: ok
+    notes: >
+      Bernd Greifeneder (CTO), published 2026-01-28. Deterministic agents (Root Cause,
+      Analytics, Forecasting, Operator), maturity stages, ecosystem integrations
+      (AWS Kiro, GitHub Copilot, ServiceNow, Azure SRE agent, Atlassian Rovo),
+      65% stat, petabyte-scale Grail claim (conflicts with exabyte-scale in lakehouse
+      blog — flagged in gaps.md and product-truth.md).
+
+rss_feeds:
+  - url: https://www.dynatrace.com/news/feed/
+    cadence: weekly
+    cache: dynatrace-news-feed.txt
+    last_fetched: 2026-08-27
+    notes: Scanned for new URLs not yet in sources. New entries are proposed, not auto-added.
+
+# Competitor sources. First-pass research done 2026-08-28 from each vendor's own
+# public pages. Each has a primary URL + a secondary URL where one was used.
+competitors:
+  - name: Datadog
+    url: https://www.datadoghq.com/product/llm-observability/
+    secondary_url: https://docs.datadoghq.com/llm_observability/
+    tier: secondary
+    cadence: monthly
+    owner_file: competitors/datadog.md
+    last_fetched: 2026-08-28
+    cache: competitor-datadog-llm-observability.txt
+    status: ok
+    notes: Marketing URL still says "llm-observability" but content is shifting to
+      "Agent Observability". Re-verify canonical product name next refresh.
+
+  - name: New Relic
+    url: https://newrelic.com/platform/ai-monitoring
+    tier: secondary
+    cadence: monthly
+    owner_file: competitors/new-relic.md
+    last_fetched: 2026-08-28
+    cache: competitor-new-relic-ai-monitoring.txt
+    status: ok
+    notes: Public page names few integrations and no AI customer quotes. Docs pass pending.
+
+  - name: Grafana
+    url: https://grafana.com/docs/grafana-cloud/monitor-applications/ai-observability/
+    secondary_url: https://grafana.com/blog/ai-observability-llms-in-production/
+    tier: secondary
+    cadence: monthly
+    owner_file: competitors/grafana.md
+    last_fetched: 2026-08-28
+    cache: competitor-grafana-ai-observability.txt
+    status: ok
+    notes: grafana.com/solutions/llm-observability/ 404s. Sourced from Grafana Cloud docs
+      + Grafana Labs blog. OpenLIT-based, OTel-native.
+
+  - name: LangSmith
+    url: https://www.langchain.com/langsmith
+    tier: secondary
+    cadence: monthly
+    owner_file: competitors/langsmith.md
+    last_fetched: 2026-08-28
+    cache: competitor-langsmith.txt
+    status: ok
+    notes: Deeper customer stories exist on a separate LangChain page, not yet fetched.
+
+  - name: Braintrust
+    url: https://www.braintrust.dev/
+    tier: secondary
+    cadence: monthly
+    owner_file: competitors/braintrust.md
+    last_fetched: 2026-08-28
+    cache: competitor-braintrust.txt
+    status: ok
+    notes: Landing page does not enumerate model/framework integrations; in docs, not fetched.
+
+# YouTube video sources. Added 2026-09-03. Official Dynatrace channel only.
+# All tier: secondary, cadence: none (spoken content on published videos; the
+# video itself will not change once posted). Transcripts are auto-generated
+# captions - spoken claims can be less precise than written docs. Every claim
+# mined from these is dated 2026-09-03 and marked as a video transcript in the
+# corpus. Re-verify anything that sounds like a hard claim against a written
+# Dynatrace source before external use.
+#
+# Removed 2026-09-03 (team decision): two "Is It Observable" (Dynatrace DevRel)
+# videos - youtube.com/watch?v=9e2VAKmHft8 ("kagent Explained") and
+# youtube.com/watch?v=g4F-Q5CknDQ ("agent-sandbox & gVisor"). DevRel-channel
+# content is not official Dynatrace positioning and must not ground
+# market-facing claims. Nothing from them remains in the corpus.
+youtube:
+  - url: https://youtu.be/64WwV4K287g
+    title: "How to Run LLM Evaluations with dt-evals | AI Observability"
+    channel: Dynatrace (official)
+    published: 2026-09-01
+    presenter: Josh Hendrick
+    tier: secondary
+    cadence: none
+    owner_file: product-truth.md
+    last_fetched: 2026-09-03
+    transcript: fetched (auto-captions)
+    notes: >
+      dt-evals mechanics, CLI workflow, evaluator list, CI gating, results as
+      bizevents, AI Observability app walkthrough. Routed into product-truth.md.
+      The user's list included a duplicate of this URL with an "?is=" tracking
+      parameter (https://youtu.be/64WwV4K287g?is=Zq_Y5KyQ36_cmzoL) - same video,
+      not listed separately.
+
+  - url: https://www.youtube.com/live/Hr7c4DTPDa0
+    title: "Dynatrace Intelligence: Get to know the Dynatrace agentic AI platform | AMA"
+    channel: Dynatrace (official)
+    published: 2026-02  # "streamed 6 months ago" as of 2026-09-03; follow-up to Perform 2026
+    presenters: Wolfgang Beer (product), Gabby (PM, gen/agentic AI), Safia (host)
+    tier: secondary
+    cadence: none
+    owner_file: positioning.md
+    last_fetched: 2026-09-03
+    transcript: fetched (auto-captions; ~3-min gap between 05:12 and 08:11)
+    notes: >
+      Deep on Dynatrace Intelligence: the "operator"/driver-LLM, MCP-first
+      integration, three phases of AI maturity, agent-to-agent with ServiceNow
+      Now Assist, root-cause agent, agentic workflow templates, Dynatrace CLI.
+      Routed into positioning.md and product-truth.md. Supporting evidence for
+      the resolved Intelligence / AI Observability pillar question (gaps.md).
+
+  - url: https://youtube.com/playlist?list=PLqt2rd0eew1YFx9m8dBFSiGYSBcDuWG38
+    title: "Observability Labs (playlist)"
+    channel: Dynatrace (official) - Andreas Grabner tutorial series
+    tier: secondary
+    cadence: none
+    owner_file: null
+    last_fetched: 2026-09-03
+    transcript: not fetched - 180-video catalog
+    status: catalog
+    notes: >
+      180 videos going back ~3 years, general Dynatrace tutorials. Treat as a
+      catalog pointer (like the Hub), not a single source. AI-relevant episodes
+      to mine on request: "Hands-on Dynatrace Assist | From Prompts to Root Cause",
+      "Dynatrace Agentic Workflows: Approvals, Agents, and Automation",
+      "AI Observability explained | Gain insight into your AI models and agents",
+      "AI and LLM Observability with Dynatrace",
+      "Dynatrace for AI Observability: OpenAI, TensorFlow and more". Ask the user
+      which specific episodes to transcribe rather than processing all 180.

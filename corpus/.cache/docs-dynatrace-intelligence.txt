@@ -1,0 +1,35 @@
+SOURCE: https://docs.dynatrace.com/docs/dynatrace-intelligence
+FETCHED: 2026-08-27
+METHOD: WebFetch (page converted to markdown, extracted text)
+
+---
+
+# Dynatrace Intelligence Overview
+
+Core Functionality:
+Dynatrace Intelligence uses "deterministic, causation-based analysis" across applications,
+services, infrastructure, logs, and traces to detect anomalies and identify root causes
+with topology context.
+
+Key Capabilities:
+The platform integrates the Grail data lakehouse and Smartscape dependency graph to
+establish baselines and correlate code changes, deployments, and configuration updates.
+It features agentic workflows with built-in agents operating under policy guardrails
+(currently in Preview).
+
+Primary Use Cases:
+- Developers: Detect regressions linked to builds/feature flags; pinpoint root cause with
+  code-level details
+- SRE: Monitor Kubernetes/cloud with anomaly detection; map dependency impact and trigger
+  approved runbooks
+- Security: Triage vulnerabilities by risk and service context; initiate remediation
+  workflows
+
+Natural Language Support:
+The system supports "in-context natural language for investigation and guided next steps,"
+enabling teams to review findings, open tickets, notify owners, or execute vetted runbooks
+within unified data context.
+
+Getting Started Resources:
+Documentation includes the Problems app for incident root cause analysis and the Anomaly
+Detection app for configuration exploration.

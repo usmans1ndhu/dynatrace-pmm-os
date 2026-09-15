@@ -1,0 +1,42 @@
+SOURCE: https://www.dynatrace.com/news/blog/dynatrace-intends-to-acquire-arize/
+FETCHED: 2026-08-27
+METHOD: WebFetch (page converted to markdown, extracted text)
+
+---
+
+# Dynatrace to Acquire Arize: Full-Lifecycle AI Observability
+
+Published: August 13, 2026 | Author: Steve Tack | Read Time: 8 minutes
+
+## Key Announcement
+Dynatrace has signed a definitive agreement to acquire Arize, combining AI-native
+evaluation tools with enterprise observability capabilities to address a critical gap in
+production AI monitoring.
+
+## Core Problem Addressed
+AI systems fail differently than traditional software. While conventional applications
+produce traceable errors, AI applications can appear functional while being inaccurate,
+biased, or misaligned. Research revealed that 51% of agentic AI leaders cite technical
+challenges managing agents at scale as a top barrier to production deployment.
+
+## What Arize Brings
+- Phoenix: Open-source AI observability platform for tracing applications, running
+  evaluations, and investigating failures during development
+- Arize AX: Managed enterprise platform providing agent observability, online evaluations,
+  and production monitoring
+- OpenInference: Open specification for AI tracing built on OpenTelemetry
+
+## Expected Combined Capabilities
+- Compare model performance between development and production environments
+- Investigate AI degradation across the full technology stack
+- Connect quality metrics with operational signals like latency and costs
+- Link agent workflows directly to business outcomes
+- Feed production insights back into improvement cycles
+
+## Commitment to Open Standards
+Dynatrace intends to support Phoenix independently and continue stewardship of
+OpenInference, maintaining vendor-neutral access for developers.
+
+## Status
+Integration pending regulatory approval; existing products and relationships remain
+unchanged immediately following close.

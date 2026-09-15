@@ -1,0 +1,86 @@
+SOURCE: https://www.dynatrace.com/solutions/ai-observability/
+FETCHED: 2026-08-27
+METHOD: WebFetch (page converted to markdown, extracted text)
+
+---
+
+# AI and LLM Observability
+
+Monitor, optimize, and secure Generative AI applications, LLMs, and agentic workflows -
+improving performance, explainability, and compliance.
+
+## Seamless Integration Across the Full AI Application Stack
+Supported platforms:
+- Amazon Bedrock
+- Azure AI Foundry
+- LangChain
+- NVIDIA NIM
+- OpenAI
+- Google Vertex AI
+
+## Seven-Layer Observability Framework
+1. Business Impact - Track productivity gains, support ticket deflection, autonomous
+   operations, and ROI.
+2. Application Performance - Trace end-user experience, availability, and reliability of
+   AI-powered applications.
+3. Orchestration Layer - Monitor chain performance, guardrails, and prompt caching across
+   frameworks.
+4. Agent-to-Agent Communication - Observe protocols, command execution, tool usage, and
+   multi-agent communications.
+5. Model Integrity - Assess token usage, cost, stability, latency, errors, and resource
+   utilization.
+6. Semantic Caches and Vector Databases - Monitor RAG pipelines, data volume, distribution,
+   and retrieval patterns.
+7. Infrastructure Monitoring - Track GPU, TPU, and compute resource utilization, saturation,
+   and errors.
+
+## Key Capabilities
+
+Cost Reduction & Performance:
+- Monitor operational metrics via unified, customizable dashboards
+- Intelligent detection identifies behavioral changes and predicts cost increases
+- Reduce AI agent/LLM response times through trace analysis
+- A/B testing insights for model comparison
+- Monitor token costs and AI coding agent reliability
+
+Trust & Guardrails:
+- Monitor guardrail metrics to mitigate biases and misuse
+- Detect model hallucinations and prompt injection attempts
+- Prevent PII leakage and detect toxic language
+- Analyze guardrail effectiveness
+
+Explainability & Tracing:
+- End-to-end visibility into request execution across frontend, backend, orchestrations,
+  RAG, LLM, and agentic layers
+- Log, trace, and map service dependencies
+- Automatic root cause detection for errors in LLM chains
+
+AI Evaluations/LLM-as-a-Judge:
+- Continuously measure accuracy, relevance, and grounding of outputs
+- Detect model drift and safety issues
+- Compare evaluation scores across versions
+- Set alerts for quality drift
+- Monitor hallucinations and ungrounded responses
+
+Compliance & Security:
+- Document all inputs/outputs with full data lineage
+- Store prompts for up to 10 years
+- Build transparency dashboards for regulatory compliance
+- Monitor infrastructure data for carbon reduction initiatives
+
+## Customer Testimonials
+
+Kulvir Gahunia, Director of the Site Reliability Office, TELUS:
+"By combining our Agentic AI initiatives with Dynatrace's AI Observability capabilities,
+we've successfully optimized our development and operations workflows."
+
+Mark Tomlinson, Senior Director of Observability and Performance, FreedomPay:
+"We knew early on that if we were going to scale AI responsibly, observability had to come
+first. Without visibility into how these models behave, you can't build the trust required
+for enterprise adoption."
+
+## Resources
+- Whitepaper: "Full-Stack AI Observability That Increases ROI and Decreases Business Risks"
+- Blog posts covering LLM evaluation, AI coding agent monitoring, agentic framework support,
+  Amazon Bedrock AgentCore, and AI ROI optimization
+- Dynatrace Playground (public sandbox with sample data)

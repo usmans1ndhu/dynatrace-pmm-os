@@ -1,0 +1,39 @@
+SOURCE: https://www.braintrust.dev/
+FETCHED: 2026-08-28
+METHOD: WebFetch (extracted text)
+STATUS: ok
+
+---
+
+Headline: "Ship quality agents at scale"
+Sub: "Surface patterns in production, turn them into evals, and improve quality with every release."
+Self-description: "Braintrust - The active observability platform for agents"
+
+Pillars: "Trace everything" (inspect prompts, responses, tool calls in real time);
+"Measure quality with evals" (score outputs with LLMs, code, or humans); "Catch issues early"
+(block bad releases before they hit production).
+Observe: scalable agent trace ingestion; live performance monitoring; custom views +
+annotation; "inspect every agent trace and tool call, search across millions of logs, and
+track latency, cost, and quality".
+Evaluate: fast prompt engineering; versioned datasets; automated + human scoring; "run
+experiments against real datasets, compare prompts and models".
+Discover/Topics: automatic pattern discovery; continuous online scoring; quality gates +
+alerts; "Topics surfaces patterns in real time across task, issues, and sentiment".
+Other: Loop agent (AI-assisted optimization); custom facets; task-specific trace views;
+trace->dataset conversion; MCP integration; "framework agnostic SDKs".
+Brainstore: "proprietary database for AI data".
+
+Integrations: SDKs Python, TypeScript, Go, Ruby, C#. MCP. Landing page does not enumerate
+model providers / frameworks.
+
+Customers:
+- Cloudflare - Kylie Czajkowski, Eng Manager, Agent Experience: "We get to iterate directly
+  in development and then ship it to production."
+- Pylon - Fred Zhao, SWE: "This discipline is what Braintrust was built for."
+- Box - Matt Terrell & Sidharth Srinivasan, PM: "Braintrust is our single source of truth for
+  all of our datasets."
+- Replit - Luis Héctor Chávez, CTO: "Braintrust helped us identify several patterns that we
+  wouldn't have found."
+- Vercel - Malte Ubl, CTO: "We didn't realize we needed deep observability until Braintrust."
+Case-study metrics: Coursera "45x More feedback with AI grading"; Notion "<24hrs To deploy a
+new frontier model" (70 engineers); Graphite "5% Reduction in negative rules".

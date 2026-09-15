@@ -1,0 +1,41 @@
+SOURCE: https://grafana.com/docs/grafana-cloud/monitor-applications/ai-observability/
+SECONDARY: https://grafana.com/blog/ai-observability-llms-in-production/ ,
+           https://grafana.com/blog/ai-observability-zero-code/ ,
+           https://grafana.com/blog/a-complete-guide-to-llm-observability-with-opentelemetry-and-grafana-cloud/
+FETCHED: 2026-08-28
+METHOD: WebFetch + WebSearch (extracted text)
+STATUS: ok
+NOTE: grafana.com/solutions/llm-observability/ returns HTTP 404.
+
+---
+
+Positioning: "OpenTelemetry-native observability with distributed tracing across your
+complete AI stack." "a complete solution designed to monitor and optimize your entire AI
+stack" / "end-to-end observability across all components."
+
+Monitors:
+- LLM performance: response times, throughput, availability across providers; user
+  interactions, prompts, completions
+- Cost: "real-time spend tracking, cost optimization, and budget management for LLM usage";
+  token consumption patterns + efficiency
+- Quality & safety: "hallucination detection, factual accuracy verification, and content
+  quality scoring"; "toxicity detection, bias assessment, and compliance tracking"
+- Agent systems: total invocations, usage distribution by source; agent cost USD + per-agent
+  breakdown; p95 operation duration; avg latency by agent and provider
+- VectorDB: similarity search response times + throughput; insert/update/delete ops; memory
+  usage + storage efficiency
+- MCP: session management, connection stability, protocol compliance; tool usage patterns +
+  availability
+- GPU: utilization, compute efficiency, throughput; temperature + cooling; memory + power
+
+Named tech:
+- OpenLIT - open source SDK, "monitor, diagnose, and optimize generative AI systems",
+  "supporting 50+ GenAI tools such as LLMs, vector databases, and frameworks such as
+  LangChain and CrewAI", OpenTelemetry-native, follows GenAI semantic conventions
+- OpenLIT Operator - "zero-code AI observability to Kubernetes by automatically injecting and
+  configuring OpenTelemetry instrumentation into your pods"
+- OpenTelemetry + GenAI semantic conventions
+- Model Context Protocol (MCP)
+- Frameworks named: LangChain, CrewAI
+
+Customers: none found on the docs page or blog posts reviewed.

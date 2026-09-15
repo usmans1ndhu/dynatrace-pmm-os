@@ -1,0 +1,33 @@
+SOURCE: https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability
+FETCHED: 2026-08-27
+METHOD: WebFetch (page converted to markdown, extracted text)
+
+---
+
+# AI Observability for Generative AI and LLM Models with Dynatrace
+
+## Core Definition
+"AI observability is the practice of collecting, analyzing, and correlating telemetry across your tech stack to understand how AI systems, agents, and LLMs behave in all environments including production."
+
+## Key Metrics Monitored
+- Stability: Success rates versus failure frequency
+- Latency: Model response times
+- Load: Request volume tracking
+- Model drift: Accuracy changes from shifting data
+- Data drift: Input data consistency monitoring
+- Cost: Token usage and resource consumption
+
+## Dynatrace Platform Capabilities
+The platform provides continuous monitoring, logging, metrics analysis, domain-specific visualization, automated anomaly detection, and explainability features for AI systems.
+
+## Integration Support
+Dynatrace connects with OpenAI, Amazon Bedrock, NVIDIA NIM, Ollama, LangChain, vector databases (Milvus, Weaviate, Qdrant), and infrastructure monitoring for GPU/TPU resources.
+
+## Key Use Cases
+Organizations use Dynatrace for service health tracking, quality and cost management, response quality evaluation through LLM-as-a-judge assessments, end-to-end tracing, and compliance auditing with complete data lineage.
+
+## Agentic AI Capabilities
+The platform monitors agent execution paths, tool invocations, and supports frameworks including OpenAI Agent SDK, LangGraph, CrewAI, and Google ADK.
+
+## Evaluation Tools
+The open-source dt-evals CLI runs continuous evaluations detecting user frustration, toxic responses, hallucinations, PII leakage, and prompt injection attempts.

@@ -1,0 +1,31 @@
+SOURCE: https://newrelic.com/platform/ai-monitoring
+FETCHED: 2026-08-28
+METHOD: WebFetch (extracted text)
+STATUS: ok
+
+---
+
+Headline: "AI observability for modern applications"
+Desc: "Build, run, and optimize AI-powered applications confidently with full-stack
+observability, performance insights, and cost control across your AI stack."
+Tagline: "Observability makes AI your business partner"
+
+Observes: response time + quality metrics; token tracking (request tokens used); APM golden
+signals; infrastructure monitoring; AI metrics summaries; model response consolidation;
+outlier identification; trace visibility prompt->response incl. user feedback; issue detection
+(bias, hallucination, toxicity); cost monitoring + custom alerts; model comparison (cost /
+performance / quality); prompt + response analysis; multi-agent mapping + interaction viz;
+tool call tracking by AI agents; distributed tracing w/ granular agent/tool visibility;
+latency + error identification; MCP server call monitoring across full request lifecycle;
+model prediction tracking + drift detection; performance dashboards; alert management +
+applied intelligence.
+
+Integrations named: OpenAI (models); Pinecone (vector DB); LangChain (framework);
+Model Context Protocol (MCP). Adjacent: New Relic Security RX, New Relic alerts.
+
+Customers (case-study links, no quotes, none AI-specific):
+- Domino's - "How Domino's optimizes digital ordering at global scale"
+- EveryMatrix - "Fueling year-on-year growth with business insights"
+- Verizon - "Reliability across massive distributed systems"
+- William Hill - "Improving customer experience during peak traffic"
+No direct customer quotes on the page.

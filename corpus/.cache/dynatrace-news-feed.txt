@@ -1,0 +1,40 @@
+SOURCE: https://www.dynatrace.com/news/feed/
+FETCHED: 2026-08-27
+METHOD: WebFetch (RSS feed parsed)
+PURPOSE: new-source-detection baseline for skills/corpus-refresh
+
+---
+
+1. From AI experiments to business outcomes: How to measure what matters
+   URL: https://www.dynatrace.com/news/blog/how-to-measure-ai-roi-with-business-observability/
+   Date: Thu, 27 Aug 2026 18:22:37 +0000
+   Categories: Observability, AI, Business Observability
+   Desc: Four-step framework for measuring AI impact at the process level via business
+   observability; argues technical metrics alone cannot answer whether business processes improved.
+
+2. OneAgent release notes version 1.345
+   URL: https://www.dynatrace.com/news/blog/oneagent-release-notes-version-1-345/
+   Date: Thu, 27 Aug 2026 08:30:19 +0000
+   Categories: Product news, Release notes, ActiveGate, OneAgent
+
+3. What's new in Dynatrace SaaS version 1.346
+   URL: https://www.dynatrace.com/news/blog/whats-new-in-dynatrace-saas-version-1-346/
+   Date: Thu, 27 Aug 2026 08:23:05 +0000
+   Categories: Product news, Release notes, SaaS, What's new
+
+4. Bring observability to SCADA systems in operational technology environments
+   URL: https://www.dynatrace.com/news/blog/bring-observability-to-scada-systems-in-operational-technology-environments/
+   Date: Wed, 26 Aug 2026 20:25:28 +0000
+   Categories: Engineering, Dynatrace Grail, infrastructure monitoring, Operational Technology, SCADA, Schneider Electric
+
+5. From millions of log lines to actionable patterns in seconds with log pattern analysis
+   URL: https://www.dynatrace.com/news/blog/from-millions-of-log-lines-to-actionable-patterns-in-seconds-with-logs-pattern-analysis/
+   Date: Tue, 25 Aug 2026 16:34:15 +0000
+   Categories: Log Management and Analytics, Product news, AI, logs
+
+6. SRE best practices and platform engineering trends: How AI workloads raise demands on observability to meet reliability requirements
+   URL: https://www.dynatrace.com/news/blog/sre-best-practices-platform-engineering-trends/
+   Date: Tue, 25 Aug 2026 12:50:19 +0000
+   Categories: AIOps, DevOps, Observability, AI Observability, platform engineering, site reliability engineering
+   Desc: Research findings: monitoring AI systems ranks as SREs' top use case (58%); platform
+   engineers prioritize AI-powered developer support.

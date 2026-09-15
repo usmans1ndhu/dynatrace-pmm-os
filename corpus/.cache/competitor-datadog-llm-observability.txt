@@ -1,0 +1,48 @@
+SOURCE: https://www.datadoghq.com/product/llm-observability/
+SECONDARY: https://docs.datadoghq.com/llm_observability/
+FETCHED: 2026-08-28
+METHOD: WebFetch (extracted text)
+STATUS: ok
+
+---
+
+## Marketing page (datadoghq.com/product/llm-observability/)
+Headline: "Ship AI agents faster, with confidence"
+Desc: "Evaluate, improve, and trace your AI agents with offline experimentation and
+production observability in one platform." "from prototype to production faster in one platform."
+
+Observes: token usage, latency, error rates/failures, cost, quality scores + drift, response
+accuracy, user session correlation. End-to-end LLM tracing ("trace every agent step"),
+datasets from production traces, experiments (prompts/models/configs), offline + online evals,
+human review/annotation, production monitoring + alerting, sensitive data scanning + redaction,
+root cause analysis across full application stack, execution graph inspection, tool decision
+tracking, golden dataset versioning, custom + built-in evaluators, hallucination detection,
+prompt injection catching, PII exposure detection, RBAC.
+
+Integrations:
+- LLM providers: Anthropic, OpenAI, Gemini, Vertex AI, Bedrock, LiteLLM
+- Frameworks: LangChain, CrewAI, Pydantic, Strands Agents
+- Infra: Vercel, AWS, Azure, Google Cloud, Kubernetes
+- SDKs: Python, Node.js, Java, OpenTelemetry, HTTP API
+
+Customers:
+- Twine (AI cybersecurity): "Datadog LLM Observability gives us complete visibility into our
+  agents' reasoning so we can reduce cost, improve reliability, and ship with confidence."
+- Fintool (AI financial copilot): "We've improved response accuracy and reduced latency,
+  ensuring faster, more reliable insights for our customers."
+- AppFolio (AI Property Manager): "Helped us ensure high model performance and quality, and
+  allowed us to expand functionality quickly and safely."
+- Page metrics (attribution unclear): "400% faster MTTR", "40% lower token usage per task",
+  "15% faster deployment"
+
+## Docs page (docs.datadoghq.com/llm_observability/)
+Definition: "Monitor, troubleshoot, and evaluate your LLM-powered applications, such as
+chatbots. You can investigate the root cause of issues, monitor operational performance, and
+evaluate the quality, privacy, and safety of your LLM applications."
+Each request = a trace. Spans: individual LLM inference (tokens, error info, latency);
+predetermined workflow; dynamic workflow executed by an LLM agent; span per agent choice / step.
+Metrics: cost, latency, performance, token usage trends; error detection + root cause; privacy
+issues. Quality/safety: prompt injection detection, sensitive data scanning + redaction,
+"automated hierarchical topic clustering" (Patterns), outlier detection across span name /
+workflow type / patterns topics.
+Auto-instrumented (Python SDK, no code mods): OpenAI, LangChain, AWS Bedrock, Anthropic.

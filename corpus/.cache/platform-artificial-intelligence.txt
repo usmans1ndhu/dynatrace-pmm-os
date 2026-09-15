@@ -1,0 +1,38 @@
+SOURCE: https://www.dynatrace.com/platform/artificial-intelligence/
+FETCHED: 2026-08-27
+METHOD: WebFetch (page converted to markdown, extracted text)
+NOTE: This URL appears to resolve to Dynatrace's "Dynatrace Intelligence" positioning page.
+Content overlaps heavily with the docs/dynatrace-intelligence source. Conflict/overlap
+tracked in corpus/product-truth.md and corpus/gaps.md.
+
+---
+
+# Dynatrace Intelligence
+
+Core Offering:
+Described as "the industry's first agentic operations system" that combines deterministic
+and agentic AI to automate operations, prevent issues, and optimize systems at scale.
+
+Key Components:
+1. Deterministic AI - Delivers reliable insights via causal AI, the Grail data lakehouse,
+   and Smartscape dependency mapping
+2. Agentic AI - Enables autonomous reasoning and action with guardrails for enterprise-scale
+   operations
+3. Built-in Agents by role:
+   - Developer Agent: Detects anomalies, diagnoses root cause with stack traces, and
+     proposes code-level fixes
+   - SRE Agent: Stabilizes Kubernetes/cloud operations with anomaly detection and automated
+     ticket enrichment
+   - Security Agent: Triages threats, scores priorities, and initiates remediation workflows
+4. Natural Language Interface (Dynatrace Assist) - Query data contextually without manual
+   prompt engineering
+5. Ecosystem Integration - Connects with partner agents for broader automation across
+   environments
+
+Customer Perspective:
+Autodesk's Alexander Bicalho stated the approach "connects insight to action, while keeping
+our teams in control, could significantly improve performance and reliability as we scale."
+
+Analyst View:
+Rob Strechay emphasized that "deterministic AI...reduces costs, increases trust, and enables
+supervised autonomy that enterprises can actually scale."

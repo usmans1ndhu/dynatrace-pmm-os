@@ -1,0 +1,32 @@
+SOURCE: https://www.langchain.com/langsmith
+FETCHED: 2026-08-28
+METHOD: WebFetch (extracted text)
+STATUS: ok
+
+---
+
+Headline: "LangSmith: Agent & LLM Observability Platform"
+Tagline: "Know what your agents are really doing"
+Desc: "LangSmith Observability gives you complete visibility into agent behavior. Trace your
+preferred framework or integrate LangSmith with any agent stack using our Python, Typescript,
+Go, or Java SDKs."
+
+Tracing: "See exactly what your agent is doing step by step. Pinpoint the issues hurting
+latency, cost, and response quality." Native tracing for popular agent frameworks +
+OpenTelemetry. Message threading for multi-turn chat.
+Monitoring: "real-time view of how your agents are performing"; cost tracking; "Online
+LLM-as-judge and code evals"; tool + agent trajectory monitoring; webhook + PagerDuty alerts.
+Insights: "Automatically analyze and cluster your traces to detect usage patterns";
+unsupervised topic clustering; error-analysis templates; executive summary with key findings.
+SmithDB: "Purpose-built database for agent traces with sub-second performance"; JSON key-path
+filtering + trajectory queries; self-hosting for data residency.
+
+Integrations:
+- Frameworks/libraries: LangChain, LangGraph, DeepAgents, OpenAI SDK, Anthropic SDK,
+  Vercel AI SDK, LlamaIndex, OpenTelemetry
+- SDKs: Python, TypeScript, Go, Java
+- Infra: AWS, GCP, Azure, Kubernetes, Postgres, object storage
+
+Customers: NO attributed quotes/metrics/case studies on the page. 25+ logos incl. Vanta,
+Clay, Rippling, Lyft, Gong, Harvey, Abridge, Autodesk, Bristol Myers Squibb, Workday, Cisco,
+Monday.com, Nvidia, Bridgewater, ServiceNow, Coinbase, Rakuten, Elastic, Uber, Zip.

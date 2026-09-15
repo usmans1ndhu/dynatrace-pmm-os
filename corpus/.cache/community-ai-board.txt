@@ -1,0 +1,10 @@
+SOURCE: https://community.dynatrace.com/t5/AI/bd-p/AI
+FETCHED: 2026-08-27
+METHOD: WebFetch + curl
+STATUS: BLOCKED - Cloudflare "Just a moment..." challenge on both WebFetch (HTTP 403) and curl.
+No content retrieved. Diff baseline is empty. Retry manually in a browser or with an
+authenticated/headful fetch. Tracked as an open question in corpus/gaps.md.
+
+---
+
+(no content)

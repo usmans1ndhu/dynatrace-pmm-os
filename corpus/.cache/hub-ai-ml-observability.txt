@@ -1,0 +1,64 @@
+SOURCE: https://www.dynatrace.com/hub/?filter=ai-ml-observability
+FETCHED: 2026-08-27
+METHOD: WebFetch (page converted to markdown, extracted text)
+
+---
+
+# AI and LLM Observability Integrations (Dynatrace Hub)
+
+## Essentials
+1. AI Observability - "End-to-end observability for your Agentic AI and LLM workloads"
+2. OneAgent for GenAI - "Monitor and trace your AI workloads and apps automatically with OneAgent"
+3. OpenTelemetry for GenAI - "Ingest and analyze OTel GenAI traces & metrics for your AI workloads"
+4. OpenInference - "Instrument your AI agents, services and apps with OpenInference"
+
+## AI Agents
+5. OpenAI Agents - "Monitor and trace your OpenAI Agents"
+6. Amazon Bedrock AgentCore - "Monitor and trace your Amazon Bedrock AgentCore Agents"
+7. Google ADK - "Monitor your Google Agent Development Kit"
+8. LangGraph - "Monitor and trace your LangChain Agents"
+9. Microsoft Agent Framework - "Observe your Microsoft Agent Framework AI agents with built-in OpenTelemetry"
+10. MCP AI Agent monitoring - "Monitoring and tracing of agents communicating via MCP"
+
+## Model Providers and Platforms
+11. OpenAI - "Monitoring your OpenAI & Azure OpenAI services such as GPT, o1, DALL-E, ChatGPT"
+12. Amazon Bedrock - "Observe end-to-end generative AI models provided by Amazon Bedrock"
+13. CrewAI - "Monitor CrewAI workloads and AI Agents"
+14. Azure AI Foundry - "End-to-end observability for GenAI & LLM applications build with Azure"
+15. Anthropic - "Monitor end-to-end your Anthropic services such as Haiku, Sonnet, and Opus"
+16. Gemini - "Observe end-to-end multimodal AI models provided by Google Gemini"
+
+## AI Coding Agent Monitoring
+17. Claude Code Agent monitoring - "Monitor your Claude Code coding agents with OTel"
+18. Gemini CLI Monitoring - "End-to-end visibility into Gemini CLI usage, tokens, and performance"
+19. OpenAI Codex Monitoring - "Visibility into OpenAI Codex CLI usage, tokens, and performance"
+20. Github Copilot SDK Monitoring - "End-to-end insight into Copilot SDK model calls, performance, and token usage"
+21. OpenCode Monitoring - "Visibility into OpenCode sessions, LLM calls, tools, and performance"
+22. OpenClaw Monitoring - "Monitor OpenClaw agent activity with AI observability in Dynatrace"
+
+## Data Management and Vector Stores
+23. Pinecone - "Gain insight into your Pinecone vector databases to build knowledgeable AI"
+24. LanceDB - "Monitor the performance of your multimodal AI database powered by LanceDB"
+25. Chroma - "Gain insights into the health of your vector and embedding databases from Chroma"
+26. Milvus - "Gain insights about vector database resource utilization and cache behavior"
+27. Weaviate - "Observe your semantic cache efficiency to reduce cost and latency for LLM apps"
+28. Qdrant - "Gain insights about your Qdrant semantic vector collections"
+
+## Orchestration and Prompt Engineering Frameworks
+29. LangChain - "Monitor your generative AI LLM applications built by LangChain framework"
+30. Haystack - "Observe your LLM applications at scale, with RAG pipeline models by Haystack"
+31. LlamaIndex - "Monitor your LLM-powered agents and workflows built with LlamaIndex framework"
+32. Langfuse - "Observe Langfuse instrumented LLM applications with Dynatrace AI Observability"
+
+## Infrastructure and Compute Resources
+33. Google Cloud Tensor Processing Units - "Observe and monitor your machine learning models built on Tensor Units"
+34. TensorFlow Keras - "Observe the training progress of TensorFlow Keras AI models"
+35. NVIDIA GPU - "Monitor base parameters of the GPU, including load, memory and temperature"
+36. vLLM - "Monitor your services built with vLLM's inference and LLM serving solution"
+
+## Security, Governance and Traffic Management
+37. Kong AI - "Automatic, intelligent observability for Kong AI and LLM API traffic"
+38. LiteLLM - "Automatic, intelligent observability for your LLM Gateway traffic"
+
+## More Resources
+39. Groq - "Monitor your services built with Groq AI inference models"
