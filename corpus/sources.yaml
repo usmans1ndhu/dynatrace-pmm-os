@@ -297,12 +297,137 @@ sources:
       65% stat, petabyte-scale Grail claim (conflicts with exabyte-scale in lakehouse
       blog — flagged in gaps.md and product-truth.md).
 
+  - url: https://www.dynatrace.com/knowledge-base/ai-observability/
+    tier: primary
+    cadence: quarterly
+    owner_file: product-truth.md
+    last_fetched: 2026-09-16
+    cache: knowledge-base-ai-observability.txt
+    status: ok
+    notes: >
+      Knowledge base page, published 2026-03-17. Educational/definitional; AI observability
+      category definition, six core components (conflicts with 7-layer solutions page —
+      flagged in gaps.md). Benefits: cost control, tracing, failure mode ID, quality
+      assurance, SLA/compliance. Named managed AI platforms: OpenAI, Anthropic, Gemini,
+      Amazon Bedrock, Azure AI Foundry, Vertex AI.
+
+  - url: https://www.dynatrace.com/knowledge-base/ai-agent-observability/
+    tier: primary
+    cadence: quarterly
+    owner_file: product-truth.md
+    last_fetched: 2026-09-16
+    cache: knowledge-base-ai-agent-observability.txt
+    status: ok
+    notes: >
+      Knowledge base page, last updated 2026-06-29. Defines AI agent observability;
+      four risk categories (business, operational, compliance, cost); three core pillars
+      (telemetry, behavioral monitoring, governance); five-step implementation approach;
+      named frameworks: Bedrock Agent Core, LangChain, OpenAI Agents SDK, Google ADK,
+      MCP-based agents.
+
 rss_feeds:
   - url: https://www.dynatrace.com/news/feed/
     cadence: weekly
     cache: dynatrace-news-feed.txt
     last_fetched: 2026-08-27
     notes: Scanned for new URLs not yet in sources. New entries are proposed, not auto-added.
+
+# Customer story sources. Added 2026-09-16. All tier: primary (Dynatrace's own
+# pages). Cadence: quarterly (customer stories rarely change post-publication).
+customers:
+  - name: InPost
+    url: https://www.dynatrace.com/customers/inpost-ai/
+    industry: Logistics
+    tier: primary
+    cadence: quarterly
+    owner_file: proof-points.md
+    last_fetched: 2026-09-16
+    cache: customer-inpost-ai.txt
+    status: ok
+    notes: >
+      AI monitoring for agentic systems; Kubernetes issue ID'd 2 min / resolved 7 min;
+      token consumption monitoring for AI shopping agent. Ops/SRE + AI engineers audience.
+
+  - name: CDL
+    url: https://www.dynatrace.com/customers/cdl/
+    industry: Insurtech (UK)
+    tier: primary
+    cadence: quarterly
+    owner_file: proof-points.md
+    last_fetched: 2026-09-16
+    cache: customer-cdl.txt
+    status: ok
+    notes: >
+      AI observability for Amazon Bedrock; CSAT +10%; tools reduced 10→1;
+      onboarding days→minutes. Governance/compliance audience.
+
+  - name: Accenture ALIP
+    url: https://www.dynatrace.com/customers/accenture/
+    industry: Insurance
+    tier: primary
+    cadence: quarterly
+    owner_file: proof-points.md
+    last_fetched: 2026-09-16
+    cache: customer-accenture.txt
+    status: ok
+    notes: >
+      Hard metrics: 40% observability cost reduction, 90% MTTR improvement,
+      99.50%→99.98% availability, 20% LLM token reduction. Strongest quantified
+      AI-observability proof in the corpus.
+
+  - name: Vitality Group
+    url: https://www.dynatrace.com/customers/vitality-2/
+    industry: Insurance
+    tier: primary
+    cadence: quarterly
+    owner_file: proof-points.md
+    last_fetched: 2026-09-16
+    cache: customer-vitality-2.txt
+    status: ok
+    notes: >
+      ~$1M logging cost savings; 90%+ logging cost reduction; 15-25% engineering
+      productivity gain. AI platform (Vitality AI) on Google Vertex. Grail story.
+
+  - name: FreedomPay
+    url: https://www.dynatrace.com/customers/freedompay-3/
+    industry: Financial Services
+    tier: primary
+    cadence: quarterly
+    owner_file: proof-points.md
+    last_fetched: 2026-09-16
+    cache: customer-freedompay-3.txt
+    status: ok
+    notes: >
+      Expanded story; 3B+ transactions, 130+ countries. OpenLLMetry, Azure.
+      Qualitative; no hard outcome metric. Original quote already in corpus from
+      solutions page.
+
+  - name: Vodafone
+    url: https://www.dynatrace.com/customers/vodafone/
+    industry: Telco
+    tier: primary
+    cadence: quarterly
+    owner_file: proof-points.md
+    last_fetched: 2026-09-16
+    cache: customer-vodafone.txt
+    status: ok
+    notes: >
+      Grail log management; 8TB→18TB/day ingest; avoided 3-4x cost increase;
+      8,000 dashboards in 8 weeks. Platform/foundation story, not AI observability
+      specifically.
+
+  - name: Vestmark
+    url: https://www.dynatrace.com/customers/vestmark/
+    industry: Financial Services
+    tier: primary
+    cadence: quarterly
+    owner_file: proof-points.md
+    last_fetched: 2026-09-16
+    cache: customer-vestmark.txt
+    status: ok
+    notes: >
+      $1.9T AUM, 4.5M accounts. OpenLLMetry for AI agent visibility. Qualitative;
+      no quantified Dynatrace outcome. SLO Guardian planned.
 
 # Competitor sources. First-pass research done 2026-08-28 from each vendor's own
 # public pages. Each has a primary URL + a secondary URL where one was used.
@@ -427,3 +552,29 @@ youtube:
       "AI and LLM Observability with Dynatrace",
       "Dynatrace for AI Observability: OpenAI, TensorFlow and more". Ask the user
       which specific episodes to transcribe rather than processing all 180.
+
+# Internal / confidential sales enablement materials. These are NOT public sources.
+# Tier: internal. Cadence: none (snapshot read once). Do not cite as a source in
+# external-facing copy. Every claim sourced only from these files must have a
+# matching public-source backup before it can be used externally.
+internal:
+  - name: FY27 JuneRally SE AI Pitch deck
+    path: "OneDrive/Documents/Pitch Deck/FY27 JuneRally - SE AI Pitch deck .pdf"
+    classification: CONFIDENTIAL (marked on the deck)
+    date: 2026  # FY27 deck; exact publish date not stamped in PDF
+    audience: SE field team
+    tier: internal
+    cadence: none
+    owner_file: product-truth.md
+    last_read: 2026-09-16
+    pages: 94
+    notes: >
+      Full SE AI pitch deck read 2026-09-16. Key new content: Dynatrace Assist
+      rebuilt on Claude Sonnet 4.6 (AWS Bedrock), 28 skills (Anthropic standard),
+      NL2DQL fine-tuned model (resolves AMA video roadmap flag — now "already
+      available"), Dynatrace Intelligence GA status breakdown (Foundation/Agents/
+      Assist/MCP all GA; Agentic Workflows = Preview), Autonomous SRE Agent
+      (explicit ROADMAP — do not present as shipped), Cloud SRE Agents multicloud,
+      MCP 4-step security workflow, dtctl + Claude Code customer anecdote, model
+      A/B testing, guardrails monitoring, multi-modal agent tracing, closing
+      positioning statement ("visibility, trust, ability to act").

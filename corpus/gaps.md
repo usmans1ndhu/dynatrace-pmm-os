@@ -124,19 +124,24 @@ Dynatrace videos — spoken, less precise than written docs.
 
 1. **dt-evals evaluator count — resolved 2026-09-15.** Blog post (https://www.dynatrace.com/news/blog/evaluate-llm-and-agent-quality-in-dynatrace-ai-observability/, Kristof Muhi, verified 2026-09-15) is the written Dynatrace source confirming **15 built-in evaluators**: Relevance, Faithfulness, Hallucination, Answer completeness, Context relevance, Factual accuracy, Summarization quality, Conciseness, Fluency, Toxicity, Bias, PII leakage, Prompt injection, User frustration, Drift detection. The video's spoken "14" was an undercount. product-truth.md and CHANGELOG.md updated.
 
-2. **NL→DQL fine-tuned model beating "Opus 4.6".** AMA (~28:13) claims an
-   unreleased fine-tuned NL→DQL model "blows out of the water" comparisons to
-   "the latest, e.g. Opus 4.6 models." Spoken, roadmap, and the model name is
-   unverified (no public "Opus 4.6" confirmed here). Do not repeat externally.
+2. **NL→DQL fine-tuned model — partially resolved 2026-09-16.** AMA (~28:13) described this as roadmap. The SE pitch deck (2026-09-16) lists it as "already available" — fine-tuned model replacing RAG, trained on hundreds of thousands of real DQL examples. The AMA's "Opus 4.6" model name is inconsistent with the confirmed "Claude Sonnet 4.6" in the same deck; do not repeat "Opus 4.6" externally. Treat availability as confirmed (internal source); seek public doc confirmation before citing GA externally.
 
 3. **Spoken proper nouns to verify:** Dynatrace CLI author "Christoph Namüller"
    (AMA ~37:34) — spelling from captions, unconfirmed.
+
+## Roadmap items — do not use in external-facing claims
+
+Source: FY27 JuneRally SE AI Pitch deck, internal, 2026-09-16. Items explicitly marked "Roadmap" in the deck:
+
+- **Autonomous SRE Agent** — Deep reasoning for root cause, impact assessment, remediation. V1 ships as a ready-made agentic workflow. No GA date stated. Framed as replacing manual 2am on-call triage. Do not present as shipped until confirmed via public docs or Dynatrace comms.
+- **Agentic Workflows** — Listed as "Preview" in the deck's GA status breakdown. Not GA; governed by preview terms.
 
 ## Positioning conflicts and ambiguities (noted, not resolved)
 
 1. **`dt-evals` vs. Arize Phoenix/AX evals.** Both do LLM evals. Overlap unaddressed publicly. (arize.md)
 2. **`platform/artificial-intelligence/` URL** resolves to "Dynatrace Intelligence" content that overlaps `docs/dynatrace-intelligence`. May be a redirect; treat as one source until confirmed.
 3. **Grail scale: petabyte vs. exabyte.** The Intelligence blog (https://www.dynatrace.com/news/blog/dynatrace-intelligence-at-the-core-of-autonomous-operations/, 2026-01-28) says "petabyte-scale"; the lakehouse blog (https://www.dynatrace.com/news/blog/why-ai-agents-need-an-ai-lakehouse-in-the-modern-enterprise/) says "exabyte-scale." Do not cite either figure externally without resolving which is current. (product-truth.md)
+4. **KB page: 6-layer framework vs. solutions page: 7-layer.** The knowledge-base/ai-observability/ page (2026-03-17) presents 6 layers: Application, Orchestration, Agentic, Model and LLM, Semantic Search and Vector Database, Infrastructure. The solutions page 7-layer framework (verified canonical 2026-08-28) adds Business Impact at the top and Agent-to-Agent Communication as a distinct layer. Do not cite the KB's 6-layer version externally; the solutions page remains authoritative until resolved.
 
 (The layer-framework naming and the integration-count mismatch that were previously listed
 here moved to **Resolved** above on 2026-08-28.)

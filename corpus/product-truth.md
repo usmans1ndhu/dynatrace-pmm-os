@@ -1,6 +1,6 @@
 ---
 title: Product Truth — Dynatrace AI Observability
-last_verified: 2026-09-15
+last_verified: 2026-09-16
 audience: both
 sources:
   - https://www.dynatrace.com/solutions/ai-observability/
@@ -11,8 +11,11 @@ sources:
   - https://www.dynatrace.com/news/blog/why-ai-agents-need-an-ai-lakehouse-in-the-modern-enterprise/
   - https://www.dynatrace.com/news/blog/evaluate-llm-and-agent-quality-in-dynatrace-ai-observability/  # blog, 2026-06-11
   - https://www.dynatrace.com/news/blog/dynatrace-intelligence-at-the-core-of-autonomous-operations/  # blog, 2026-01-28
+  - https://www.dynatrace.com/knowledge-base/ai-observability/  # knowledge base, 2026-03-17
+  - https://www.dynatrace.com/knowledge-base/ai-agent-observability/  # knowledge base, 2026-06-29
   - https://youtu.be/64WwV4K287g  # video transcript, 2026-09-03
   - https://www.youtube.com/live/Hr7c4DTPDa0  # video transcript, 2026-09-03
+  - FY27 JuneRally - SE AI Pitch deck .pdf  # internal SE deck, CONFIDENTIAL, verified 2026-09-16; back every claim with a public source before external use
 ---
 
 # Product Truth
@@ -38,11 +41,19 @@ Source for all seven: https://www.dynatrace.com/solutions/ai-observability/
 ### Cost reduction & performance
 Unified customizable dashboards; intelligent detection of behavioral changes and predicted cost increases; trace-based latency reduction for agents/LLMs; A/B testing insight for model comparison; token-cost monitoring and AI coding-agent reliability. (https://www.dynatrace.com/solutions/ai-observability/)
 
+Cost and performance monitoring is powered by Davis AI with SLOs, problem alerts, and predictions. If model latency spikes you can see which users were affected; if token consumption is trending toward overspend you see it before month-end, not after. (internal deck, 2026-09-16)
+
+**Model version comparison / A/B testing:** Dynatrace lets you compare model versions side by side — latency, token usage, cost, error rates, output quality — and run A/B tests across model variants. When OpenAI or Anthropic releases a new version or deprecates an old one, you can validate the impact before it surprises you. (internal deck, 2026-09-16)
+
 ### Trust & guardrails
 Guardrail metrics for bias/misuse; hallucination and prompt-injection detection; PII-leak prevention; toxic-language detection; guardrail effectiveness analysis. (https://www.dynatrace.com/solutions/ai-observability/)
 
+Guardrail monitoring surfaces guardrail outcomes — violations that your model provider detects and reports (hallucinations, PII leakage, toxicity) — so compliance, security, and engineering teams can monitor them, track trends, and alert on them. Dynatrace is the visibility layer, not the AI quality engine itself. (internal deck, 2026-09-16)
+
 ### Explainability & tracing
 End-to-end request visibility across frontend, backend, orchestration, RAG, LLM, and agentic layers; log/trace and service dependency mapping; automatic root cause detection for errors in LLM chains. (https://www.dynatrace.com/solutions/ai-observability/, https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability)
+
+**Multi-modal Agent Explainability & tracing:** Traces the full execution path of agents — every decision point, every tool invocation, every model call — across frameworks: Amazon AgentCore, Amazon Strands, Google ADK, LangChain, OpenAI Agents, MCP. Follow any request from first user input to agent's final action. (internal deck, 2026-09-16)
 
 ### AI evaluations / LLM-as-a-judge
 Continuous measurement of accuracy, relevance, grounding; model-drift and safety-issue detection; evaluation-score comparison across versions; quality-drift alerts. (https://www.dynatrace.com/solutions/ai-observability/)
@@ -62,6 +73,29 @@ Full input/output documentation with data lineage; prompt storage up to 10 years
 
 ### Metrics tracked at the model layer
 Stability (success vs. failure rate), latency (response time), load (request volume), model drift (accuracy change from shifting data), data drift (input consistency), cost (token + resource consumption). (https://docs.dynatrace.com/docs/observe/dynatrace-for-ai-observability)
+
+## AI agent observability — risks, pillars, and implementation
+
+Source: https://www.dynatrace.com/knowledge-base/ai-agent-observability/, last updated 2026-06-29, verified 2026-09-16.
+
+**Definition.** AI agent observability enables monitoring, tracing, and explanation of how AI agents make decisions by capturing prompts, reasoning chains, outputs, and contextual data.
+
+**Four risks of unobservable agents:**
+- Business: incorrect responses damage revenue and customer trust
+- Operational: hallucinations and unexpected decision loops degrade performance
+- Compliance: missing audit trails create regulatory exposure
+- Cost: untracked token usage and model consumption create scaling problems
+
+**Three core pillars:**
+1. Telemetry — captures prompts, responses, and tool calls via OpenTelemetry and OpenLLMetry standards
+2. Behavioral Monitoring — identifies unsafe actions, hallucinations, and policy deviations; measures latency, throughput, accuracy, and cost
+3. Governance — supports audit trails and analyzes guardrail metrics
+
+**Five-step implementation approach:** instrument early → define success metrics → correlate signals → automate oversight → unify monitoring platforms. (same source)
+
+**Named frameworks:** Amazon Bedrock Agent Core, LangChain, OpenAI Agents SDK, Google ADK, MCP-based agents. (same source)
+
+> Note: The KB page also presents a **6-layer framework** (Application, Orchestration, Agentic, Model and LLM, Semantic Search and Vector Database, Infrastructure) that differs from the **7-layer framework** on the solutions page (which adds Business Impact as the top layer and Agent-to-Agent Communication as a distinct layer). The solutions page framing is the resolved canonical external framing — do not cite the KB's 6-layer version externally until aligned. Flagged in gaps.md.
 
 ## Agentic AI support
 
@@ -128,6 +162,63 @@ AI Observability and Dynatrace Intelligence are **not competing narratives**. Th
 They share the same foundation: **Grail** (the data lakehouse / context engine), **Smartscape** (the real-time dependency and business-context graph), and **Davis AI** (causal, deterministic analysis). Traces this file collects from a GenAI app land in Grail with Smartscape topology context; that is the same data Intelligence's agents reason over. (Architecture point, per "The platform underneath" above: https://www.dynatrace.com/news/blog/why-ai-agents-need-an-ai-lakehouse-in-the-modern-enterprise/, https://docs.dynatrace.com/docs/dynatrace-intelligence, https://www.dynatrace.com/platform/artificial-intelligence/)
 
 > **Supporting evidence (video, dated).** The Feb 2026 Dynatrace AMA "Dynatrace Intelligence: Get to know the Dynatrace agentic AI platform" (https://www.youtube.com/live/Hr7c4DTPDa0, `verified: 2026-09-03`, auto-captions) states that Dynatrace Intelligence is "fueled by a unified data lakehouse that we call Grail along with Smartscape topology" feeding both Dynatrace's agents and customer-built agents — the same platform the AI Observability app writes into. Consistent with the architecture point above.
+
+## Dynatrace Assist — rebuilt from the models up
+
+Source: internal SE deck, 2026-09-16 (internal; back with public sources before external use). Cross-references AMA video transcript verified 2026-09-03.
+
+**What it is now.** Rebuilt from "chatbot" to "thinking partner." Four upgrades shipped (deck, 2026-09-16):
+1. **Anthropic foundation models** — driver LLM upgraded to Claude Sonnet 4.6, hosted on Amazon Bedrock. Stronger multi-step reasoning, better tool use, more reliable answers on complex investigations when agentic mode is enabled.
+2. **Skills knowledge base** — curated knowledge base following the Anthropic Claude Agent Skills standard. Know-how that lived in Dynatrace engineers' minds is now in the product (troubleshooting patterns, best practices, domain expertise). 28 available skills; not all are available in Assist — some are CLI-only. New skills added regularly. Makes Assist agent-ready: same skills can be consumed by AI agents running autonomously via dtctl or MCP servers.
+3. **Purpose-built DQL model** — retired the RAG approach for NL→DQL in favor of a fine-tuned model trained on "hundreds of thousands of real DQL examples." Significantly more reliable natural-language-to-DQL in Assist, Notebooks, Dashboards, and via MCP servers. (Resolves the ⚠ from video transcript; the "close to release" claim in the AMA is now "already available" per the deck — flagged in gaps.md video item #2.)
+4. **Streamlined chat interface** — new side panel (pinned or floating); no longer a modal. Context stays on screen while Assist sits alongside you.
+
+**Single-flow experience:** Use Assist side-by-side with Dynatrace apps to analyze, drill down, and act without losing context. Assist automatically understands what you are viewing and grounds answers in the active app.
+
+## Dynatrace Intelligence — current status and roadmap
+
+### What's GA (as of deck date, 2026-09-16)
+
+Source: internal SE deck, page 76, 2026-09-16. Internal; verify GA status against public docs before citing externally.
+
+| Capability | Status | Notes |
+|---|---|---|
+| Intelligence Foundation (consolidation of Davis Root-Cause Agent, Forecast Agent, CoPilot, Davis, Prediction, Anomaly Detection, MCP) | GA | Included with 3rd Gen SaaS tenants |
+| Agents: Davis Root-Cause Agent, Forecast Agent, Grail Query Agent, Help Agent | GA | Available through Remote MCP and Assist |
+| Dynatrace Assist (agentic chat, plans, reasons, uses tools) | GA | — |
+| Dynatrace MCP Server | GA | Each 3rd Gen SaaS Tenant auto-enabled with remote MCP server |
+| dt-ctl CLI | Open source | For humans and AI agents alike |
+| Dynatrace for AI (skills, prompts, instructions for building agents on Dynatrace context) | Open source | — |
+| Agentic Workflows (ready-made workflow templates) | Preview | Not GA; governed by preview terms |
+
+### Autonomous SRE Agent — ROADMAP, not shipped
+
+> **Do not present this as a current capability.** The deck explicitly labels this as a roadmap item.
+
+V1 ships as a ready-made agentic workflow with deep reasoning for root cause, impact assessment, and actionable remediation recommendations — supporting both human-led and fully autonomous operations at production scale. Framed as replacing the "2am on-call" manual triage workflow. Named competitors this closes the gap against: Resolve, Rootly, Traversal (and implicitly Datadog). (internal deck, 2026-09-16)
+
+### Cloud SRE Agents (multicloud)
+
+Orchestrates AWS, Azure, and Google SRE agents to automatically resolve and remediate incidents across multicloud environments. Routes identified issues based on configurable rules; centralizes findings; provides a single audit trail for autonomous operations. Also integrates with the **AWS DevOps agent** for end-to-end automated root cause analysis. (internal deck, 2026-09-16)
+
+### Dynatrace MCP Server — security use case (4-step workflow)
+
+1. Problem detected → triggers Dynatrace MCP Server
+2. MCP Server queries Grail for CVE details + runs Causal AI root-cause analysis
+3. GitHub is notified with full production context
+4. GitHub Copilot auto-generates a code fix — no manual triage needed
+
+Described as "the central hub connecting Dynatrace's observability intelligence to your developer tools." (internal deck, 2026-09-16)
+
+### Visual agent builder (no-code)
+
+A no-code agent builder based on workflows, triggers, schedules, and approvals. Customers can build custom agents as agentic workflows — for example, response agents for specific vulnerabilities, ITSM integration, Kubernetes/cloud scale, or code fixes. Also ships ready-to-use agentic workflow templates as a starting point. (internal deck, 2026-09-16)
+
+### dtctl — developer and AI agent CLI
+
+Ships with a built-in skill file that teaches AI assistants how to operate a customer's Dynatrace environment, so agents can query logs, check SLO status, and trigger workflows out of the box. Result: hours of configuration become a single command; AI agents can act on Dynatrace autonomously.
+
+**Customer anecdote (internal deck, spoken):** One Dynatrace customer used dtctl + Claude Code + GitHub to rewrite a 20+ year old app in a few weeks, correlating pieces of code with live transactional data to remove dead code and improve performance. Not attributable externally — no customer name or public source; treat as directional.
 
 ## Try / access
 
@@ -228,9 +319,7 @@ the same platform (see "How it relates to AI Observability" above).
   Assist reuses the NL→DQL "environment-aware queries" opt-in; when enabled
   Dynatrace "constantly builds a semantic index in the background" so custom
   names/fields are picked up. (~17:02–17:48)
-- ⚠ **Fine-tuned NL→DQL model** "super close" to release, with "massive"
-  improvements — internal tests said to beat "the latest, e.g. Opus 4.6 models."
-  (~28:13–28:35) Roadmap + spoken; "Opus 4.6" naming unverified.
+- ~~⚠ **Fine-tuned NL→DQL model**~~ **Resolved 2026-09-16:** The AMA (~28:13) described this as "super close" to release. The SE pitch deck (2026-09-16) lists it as "already available" — "replaced RAG approach with purpose-built finetuned model trained on hundreds of thousands of real examples." The video's mention of beating "Opus 4.6 models" is inconsistent with the confirmed model (Claude Sonnet 4.6); do not repeat the "Opus 4.6" name externally. See gaps.md video item #2.
 - **Guardrails.** "Tool execution confirmation" — step-by-step, the user confirms
   each action before an agent takes it. DQL follows standard defaults unless the
   prompt asks to exceed them. Biggest customer-raised risk is **query cost**;

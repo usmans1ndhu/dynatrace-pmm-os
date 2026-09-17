@@ -53,6 +53,16 @@ Dynatrace's claim is that it connects those two views, plus the infrastructure u
 - **AI evaluations / LLM-as-a-judge** — accuracy, relevance, grounding; drift and safety detection; score comparison across versions; quality-drift alerts. (https://www.dynatrace.com/solutions/ai-observability/)
 - **Compliance & security** — full input/output data lineage, prompt storage up to 10 years, transparency dashboards, carbon-reduction monitoring. (https://www.dynatrace.com/solutions/ai-observability/)
 
+## Closing statement / elevator pitch (internal deck)
+
+Source: FY27 JuneRally SE AI Pitch deck, internal, verified 2026-09-16. Not a public source — do not cite; use as inspiration for external copy.
+
+> "You can't scale AI you can't see. You can't trust AI you can't explain. And you can't automate AI you don't understand. Dynatrace gives you all three: visibility, trust, and the ability to act. From your first AI application all the way to fully autonomous operations."
+
+Structural frame from the deck — **Built for AI vs. Powered by AI:**
+- **AI Observability** = Built for AI — the layer that observes your AI systems
+- **Dynatrace Intelligence** = Powered by AI — Dynatrace's own AI running your operations
+
 ## Open positioning questions
 
 See gaps.md. Key open one: how the Dynatrace-native AI observability and the acquired Arize products are positioned relative to each other post-close. (The AI Observability vs. Dynatrace Intelligence question is resolved — two connected pillars on one platform; see gaps.md → Resolved and product-truth.md.)

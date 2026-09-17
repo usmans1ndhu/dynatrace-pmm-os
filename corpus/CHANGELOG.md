@@ -8,6 +8,55 @@ Format per entry:
 
 ---
 
+## 2026-09-16 — FY27 JuneRally SE AI Pitch deck (94 pages) read and integrated
+
+**Source added to `sources.yaml`** — new `internal:` section (tier: internal, cadence: none, CONFIDENTIAL, pages: 94, last_read: 2026-09-16). Every claim sourced only from this deck requires a public-source backup before external use.
+
+**`product-truth.md`** (`last_verified` → 2026-09-16):
+- Sources header: pitch deck added.
+- **Dynatrace Assist — rebuilt from the models up** (new section): Claude Sonnet 4.6 on AWS Bedrock confirmed; 28 skills following Anthropic Agent Skills standard; NL2DQL fine-tuned model replacing RAG (now "already available" — resolves AMA ⚠); side-panel UI.
+- **Dynatrace Intelligence — current status** (new section): GA status breakdown table (Foundation, Agents, Assist, MCP Server all GA; Agentic Workflows = Preview; dt-ctl and Dynatrace for AI open source).
+- **Autonomous SRE Agent — ROADMAP** (new section): explicitly flagged as not shipped; V1 as agentic workflow; do not use in external claims.
+- **Cloud SRE Agents** (new sub-section): orchestrates AWS/Azure/Google SRE agents across multicloud; AWS DevOps agent integration.
+- **MCP Server 4-step security workflow** (new sub-section): Problem → MCP → Grail + Causal AI → GitHub notification → Copilot code fix.
+- **Visual agent builder** (no-code, new sub-section).
+- **dtctl** (expanded): built-in skill file detail; dtctl + Claude Code + GitHub customer anecdote (directional only — no public attribution).
+- **AI Observability capabilities expanded**: cost monitoring with SLOs/predictions powered by Davis AI; model version A/B testing; guardrails monitoring from model providers; multi-modal agent explainability (AgentCore, Strands, Google ADK, LangChain, OpenAI Agents, MCP).
+- Video transcript NL2DQL flag updated from ⚠ roadmap → resolved (now "already available" per deck).
+
+**`positioning.md`** — new "Closing statement / elevator pitch" section: "You can't scale AI you can't see..." quote from deck; Built for AI vs. Powered by AI frame.
+
+**`gaps.md`** — new "Roadmap items" section: Autonomous SRE Agent and Agentic Workflows flagged as not GA. Video item #2 (NL2DQL) partially resolved: confirmed available, "Opus 4.6" model name still inconsistent with confirmed "Claude Sonnet 4.6."
+
+---
+
+## 2026-09-16 — Seven customer stories added
+
+**New `customers:` section added to `sources.yaml`** (all tier: primary, cadence: quarterly, last_fetched: 2026-09-16):
+- InPost (Logistics) — AI monitoring for agentic systems; Kubernetes 2-min ID / 7-min resolution; token control.
+- CDL (UK Insurtech) — Bedrock AI observability; CSAT +10%; tools 10→1; onboarding days→minutes.
+- Accenture ALIP (Insurance) — 40% observability cost cut; 90% MTTR improvement; 99.50%→99.98% availability; 20% LLM token reduction. Strongest quantified proof in corpus.
+- Vitality Group (Insurance) — ~$1M log cost savings; 90%+ logging cost reduction; 15-25% engineering productivity gain. Vitality AI on Google Vertex.
+- FreedomPay (Financial Services) — expanded story (3B+ transactions, 130+ countries); qualitative; original quote already in corpus.
+- Vodafone (Telco) — Grail log management; 8TB→18TB/day; avoided 3-4x cost increase; 8,000 dashboards in 8 weeks.
+- Vestmark (Financial Services) — OpenLLMetry for AI agent visibility; $1.9T AUM platform; qualitative.
+
+**`proof-points.md`** — major update (`last_verified` → 2026-09-16): bottom line rewritten to reflect quantified proof now available; all 7 customer stories added with quotes, metrics, Dynatrace use, audience fit, and source. FreedomPay entry expanded from single quote to full story. "What's missing" section updated.
+
+---
+
+## 2026-09-16 — Two knowledge base sources added
+
+**Sources added to `sources.yaml`** (both tier: primary, cadence: quarterly, last_fetched: 2026-09-16):
+- https://www.dynatrace.com/knowledge-base/ai-observability/ — published 2026-03-17. AI observability definition, 6-layer framework (conflict with 7-layer solutions page — see gaps.md #4), named managed platforms. Cache: `knowledge-base-ai-observability.txt`.
+- https://www.dynatrace.com/knowledge-base/ai-agent-observability/ — last updated 2026-06-29. Definition, four risk categories, three core pillars (telemetry, behavioral monitoring, governance), five-step implementation, named frameworks. Cache: `knowledge-base-ai-agent-observability.txt`.
+
+**`product-truth.md`** — new section "AI agent observability — risks, pillars, and implementation" added before the Agentic AI support section. Sources header updated with both KB URLs. Inline conflict note on the 6-layer framework discrepancy.
+
+**`gaps.md`** — new positioning conflict #4: KB page 6-layer framework vs. solutions page 7-layer framework.
+
+---
+
 ## 2026-09-15 — Two new blog sources added; dt-evals evaluator count resolved
 
 **Sources added to `sources.yaml`** (both tier: primary, cadence: quarterly, last_fetched: 2026-09-15):
