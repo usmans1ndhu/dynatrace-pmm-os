@@ -8,6 +8,22 @@ Format per entry:
 
 ---
 
+## 2026-09-17 — Five Autonomous Operations customer stories added (Careem, CIMB, Macquarie, Sicredi, WGU)
+
+**Sources:** dynatrace.com/customers/ Autonomous Operations filter. All five fetched successfully (Macquarie URL resolved as /macquarie-bank/).
+
+**New entries added to `sources.yaml`** under `customers:` (all tier: primary, cadence: quarterly, last_fetched: 2026-09-17):
+- Careem, CIMB Bank, Macquarie Bank, Sicredi, WGU
+
+**`proof-points.md`** — new section "Customer proof — Autonomous Operations":
+- **Careem**: Strongest quantified proof in section — 65% cost reduction, 84% MTTD reduction (under 2 min), 6x faster root cause, 10,000 engineering hours saved/year, 99.99% availability. Tagged Autonomous Operations + AI Observability.
+- **CIMB Bank**: Near-zero critical incidents; availability 0.6→0.95; 90% alert reduction. Tagged Autonomous Operations + AI Observability.
+- **Macquarie Bank**: Qualitative; "AI as first responder, human in the loop" framing. Live Debugger + Dynatrace Intelligence. Tagged Autonomous Operations.
+- **Sicredi**: 80% faster instrumentation; 67% cognitive load reduction; SLO time 15min→3min. Tagged AI Observability.
+- **WGU**: Qualitative; proactive detection, uninterrupted availability. Only education sector story in corpus. Tagged Autonomous Operations.
+
+---
+
 ## 2026-09-16 — FY27 Integrated Campaign Messaging v3.0 (14 pages) read and integrated
 
 **Source added to `sources.yaml`** — new entry under `internal:` (tier: internal, v3.0, last updated 2026-07-07, status: work in progress, in review; owners: Kristi Beard, Ashley Adams, Greg Findlen, Mrudula Bangera; 14 pages).

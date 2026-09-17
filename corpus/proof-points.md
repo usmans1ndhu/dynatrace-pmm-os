@@ -138,6 +138,124 @@ Note: Qualitative only; no quantified outcome. No dedicated customer story page 
 
 ---
 
+## Customer proof — Autonomous Operations
+
+Complementary to AI Observability. These stories support the "Powered by AI" pillar — from insight to trusted action.
+
+### Careem (Technology / Super-app — Uber company)
+
+75M+ customers; 3.5M+ Captains; 20+ services; 800+ microservices on Amazon EKS; billions of API calls daily; 40TB raw logs processed daily.
+
+**Alaa Alkhdarat, Senior SRE Manager:**
+> "By consolidating our observability stack with Dynatrace, we have saved approximately 10,000 engineering hours per year and unlocked a 65% cost reduction."
+
+**Ricardo Fernandes, VP Software Engineering:**
+> "Dynatrace has cut our MTTD by 84% to under two minutes and helps us identify root causes more than six times faster."
+
+**Metrics:**
+- 65% cost reduction vs. previous observability stack
+- 84% reduction in MTTD — under 2 minutes
+- 6x faster root cause identification
+- ~10,000 engineering hours saved annually
+- 99.99% availability SLA maintained
+
+**Dynatrace use:** AI-powered observability, automated instrumentation, root cause analysis, log management, user experience monitoring, AI incident management agent.
+
+Source: https://www.dynatrace.com/customers/careem/, verified 2026-09-17
+Audience fit: Ops/SRE, exec.
+Tag: Autonomous Operations + AI Observability
+
+---
+
+### CIMB Bank (Financial Services)
+
+Founded 1987; RM778.7B total assets (2025); RM7.9B net profit (2025); 33,000+ staff; 30M+ customers across ASEAN; ~100M mobile transactions/month in Malaysia.
+
+**Ros Yusoff, Group CTO:**
+> "Dynatrace helps bridge the gap between IT operations and the business."
+> "Before Dynatrace, we spent a lot of time in war rooms trying to piece together where problems were happening."
+> "Our availability scores have improved from around 0.6 to a consistent 0.95."
+
+**Metrics:**
+- Critical incidents reduced to near-zero
+- Availability score improved from 0.6 to 0.95
+- Alert volumes reduced by 90%
+- Root-cause identification in seconds vs. manual investigation
+
+**Dynatrace use:** Unified observability, AI-powered root cause analysis, AIOps, automation for self-healing workflows.
+
+Source: https://www.dynatrace.com/customers/cimb/, verified 2026-09-17
+Audience fit: Ops/SRE, exec.
+Tag: Autonomous Operations + AI Observability
+
+---
+
+### Macquarie Bank (Financial Services)
+
+2.2M customers; A$200B+ deposits; A$190B+ loan portfolio. Targets 99.95% service availability.
+
+**Phil Grasso-Nguyen, Head of Reliability:**
+> "With Dynatrace, we can use AI as a first responder for every incident, with a human in the loop."
+> "Dynatrace enables us to use AI to reduce risk at every point of change, so we can innovate faster and safer."
+> "The best incident is the one that never happens."
+
+**Key outcomes:**
+- Significant reduction in major incidents
+- Improved MTTD and MTTR
+- Proactive reliability and resilience approach
+
+**Dynatrace use:** Dynatrace Intelligence, Live Debugger, unified observability. Use cases: AI as first responder, automated release verification (safer innovation), root cause analysis (faster recovery).
+
+Source: https://www.dynatrace.com/customers/macquarie-bank/, verified 2026-09-17
+Audience fit: Ops/SRE, exec.
+Tag: Autonomous Operations
+Note: Outcomes qualitative; no hard metric on incident count or MTTD/MTTR reduction published. Quotes from Phil Grasso-Nguyen (Head of Reliability) are strong for AI-first-responder framing.
+
+---
+
+### Sicredi (Financial Services — Brazilian Credit Union)
+
+Founded 1902; $88.6B total assets; $60.2B total deposits; 50,000+ employees; 10M+ associates; 1,100+ applications; 10,000 components; 7,000 databases.
+
+**Metrics:**
+- 80% reduction in time to instrument apps with observability
+- 67% reduction in cognitive load for developers
+- SLO creation time: 15 minutes → 3 minutes
+- SLO process: 6 steps → 2 steps
+
+**Dynatrace use:** Full-stack observability, OpenPipeline, Grail, MCP Server for AI integration, Internal Developer Platform (IDP) integration.
+
+Notable quotes:
+> "It makes reliability visible across our entire organisation."
+
+Source: https://www.dynatrace.com/customers/sicredi/, verified 2026-09-17
+Audience fit: Ops/SRE, AI engineers, platform engineering.
+Tag: AI Observability
+
+---
+
+### WGU — Western Governors University (Education)
+
+140,000+ students; non-profit, fully online university.
+
+> "Dynatrace is the evolution which every technology industry should adopt. It's intelligent, it's agile, and it lives up to the promises it makes."
+> "When moving to a new observability platform, we wanted the best in the market."
+
+**Key outcomes:**
+- Uninterrupted e-learning platform availability during peak periods
+- Proactive issue identification before student impact
+- Reduced MTTR for system issues
+- Enhanced visibility across cloud-native architecture
+
+**Dynatrace use:** End-to-end observability, Smartscape (topology mapping), automated root cause analysis.
+
+Source: https://www.dynatrace.com/customers/wgu/, verified 2026-09-17
+Audience fit: Ops/SRE.
+Tag: Autonomous Operations
+Note: Qualitative; no hard metric. Unique as the only education sector story in corpus.
+
+---
+
 ## Customer proof — Platform / Grail (foundation wedge)
 
 These speak to Grail and full-stack observability as the foundation, not AI observability specifically. Use to support the "same platform you already run" wedge.

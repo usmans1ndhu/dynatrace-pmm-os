@@ -416,6 +416,73 @@ customers:
       8,000 dashboards in 8 weeks. Platform/foundation story, not AI observability
       specifically.
 
+  - name: Careem
+    url: https://www.dynatrace.com/customers/careem/
+    industry: Technology (super-app, Uber company)
+    tag: Autonomous Operations + AI Observability
+    tier: primary
+    cadence: quarterly
+    owner_file: proof-points.md
+    last_fetched: 2026-09-17
+    status: ok
+    notes: >
+      65% cost reduction; 84% MTTD reduction (under 2 min); 6x faster root cause;
+      10,000 engineering hours saved/year; 99.99% availability. Strongest
+      quantified Autonomous Operations proof in corpus.
+
+  - name: CIMB Bank
+    url: https://www.dynatrace.com/customers/cimb/
+    industry: Financial Services
+    tag: Autonomous Operations + AI Observability
+    tier: primary
+    cadence: quarterly
+    owner_file: proof-points.md
+    last_fetched: 2026-09-17
+    status: ok
+    notes: >
+      Near-zero critical incidents; availability 0.6→0.95; 90% alert volume reduction.
+      CTO Ros Yusoff quote on bridging IT/business gap.
+
+  - name: Macquarie Bank
+    url: https://www.dynatrace.com/customers/macquarie-bank/
+    industry: Financial Services
+    tag: Autonomous Operations
+    tier: primary
+    cadence: quarterly
+    owner_file: proof-points.md
+    last_fetched: 2026-09-17
+    status: ok
+    notes: >
+      Qualitative; "AI as first responder with human in the loop" framing.
+      Phil Grasso-Nguyen quotes strong for Autonomous Operations story.
+      Targets 99.95% availability.
+
+  - name: Sicredi
+    url: https://www.dynatrace.com/customers/sicredi/
+    industry: Financial Services (Brazilian credit union)
+    tag: AI Observability
+    tier: primary
+    cadence: quarterly
+    owner_file: proof-points.md
+    last_fetched: 2026-09-17
+    status: ok
+    notes: >
+      80% faster app instrumentation; 67% cognitive load reduction; SLO time
+      15min→3min; 6 steps→2 steps. Developer productivity + platform engineering story.
+
+  - name: WGU
+    url: https://www.dynatrace.com/customers/wgu/
+    industry: Education
+    tag: Autonomous Operations
+    tier: primary
+    cadence: quarterly
+    owner_file: proof-points.md
+    last_fetched: 2026-09-17
+    status: ok
+    notes: >
+      Qualitative; proactive detection, reduced MTTR, uninterrupted availability.
+      Only education sector story in corpus.
+
   - name: Vestmark
     url: https://www.dynatrace.com/customers/vestmark/
     industry: Financial Services
