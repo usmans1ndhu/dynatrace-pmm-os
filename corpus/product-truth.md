@@ -58,6 +58,8 @@ End-to-end request visibility across frontend, backend, orchestration, RAG, LLM,
 ### AI evaluations / LLM-as-a-judge
 Continuous measurement of accuracy, relevance, grounding; model-drift and safety-issue detection; evaluation-score comparison across versions; quality-drift alerts. (https://www.dynatrace.com/solutions/ai-observability/)
 
+**AI Evaluations** is listed as a NEW capability in the FY27 campaign messaging (v3.0, 2026-07-07): LLM-as-judge for faithfulness, hallucination, toxicity, and **agent trajectory support** (new evaluation type, confirms agents-as-a-whole trajectory can be evaluated, not just individual LLM calls). (internal messaging doc)
+
 The open-source **`dt-evals`** CLI runs online and offline evaluations of LLM and agent quality from GenAI traces. Install via `npm install -g @dynatrace-oss/dt-evals`; key commands are `configure`, `doctor`, and `run`. (https://www.dynatrace.com/news/blog/evaluate-llm-and-agent-quality-in-dynatrace-ai-observability/, verified 2026-09-15)
 
 **Offline mode:** pre-release testing against fixed test sets. **Online mode:** post-deployment monitoring of sampled production traffic. CI gating: `dt-evals run --since 6h --ci` exits non-zero if any evaluator breaches its threshold, blocking a deploy on quality regression. (same source)
@@ -96,6 +98,32 @@ Source: https://www.dynatrace.com/knowledge-base/ai-agent-observability/, last u
 **Named frameworks:** Amazon Bedrock Agent Core, LangChain, OpenAI Agents SDK, Google ADK, MCP-based agents. (same source)
 
 > Note: The KB page also presents a **6-layer framework** (Application, Orchestration, Agentic, Model and LLM, Semantic Search and Vector Database, Infrastructure) that differs from the **7-layer framework** on the solutions page (which adds Business Impact as the top layer and Agent-to-Agent Communication as a distinct layer). The solutions page framing is the resolved canonical external framing — do not cite the KB's 6-layer version externally until aligned. Flagged in gaps.md.
+
+## AI Observability App — named capabilities
+
+Source: FY27 campaign messaging v3.0 (internal, 2026-07-07). These are the named product surfaces:
+
+**AI Observability App — 4 tabs:**
+1. Overview — discovery and validation
+2. Service health — monitoring and alerting
+3. Explorer — slicing and analysis
+4. Prompt — manage, test, govern
+
+**Platform differentiators named in the messaging doc:**
+- Dynatrace Intelligence (no point solution has this)
+- Grail (100% data captured / compliance backbone)
+- Smartscape (agent topology visualization)
+- OpenTelemetry / OpenLLMetry native (framework-agnostic ingestion)
+
+**NEW capabilities (listed as new in the FY27 messaging):**
+- Agent Topology and Dependency
+- Prompt Debugging and Management
+- AI Coding Agent Monitoring (GitHub Copilot, Claude Code) — confirming this is a named, marketed capability
+- RUM (Real User Monitoring) for AI workloads
+- AI Evaluations with agent trajectory support (see evals section above)
+
+**In PREVIEW:**
+- Agentic Workflows
 
 ## Agentic AI support
 

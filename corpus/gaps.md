@@ -27,8 +27,10 @@ sources:
 
 ## Facts we could not verify or quantify
 
-- **No quantified customer ROI.** Every customer reference (TELUS, FreedomPay, Autodesk) is qualitative. No public "cut MTTR by X" or "saved $Y in tokens" tied to a name. (proof-points.md)
-- **Survey stats are unsourced.** "51% of agentic AI leaders..." and "58% of SREs..." are cited by Dynatrace without a linked study. Find the underlying reports before using externally.
+- **No quantified customer ROI.** Every customer reference (TELUS, FreedomPay, Autodesk) is qualitative. No public "cut MTTR by X" or "saved $Y in tokens" tied to a name. (proof-points.md) *(Now partially resolved: Accenture 90% MTTR, InPost 7-min resolution, Vitality $1M savings — see proof-points.md customer section.)*
+- **51% stat source confirmed (2026-09-16).** The "Pulse of Agentic AI Report 2026" is named as the source in the FY27 campaign messaging v3.0. The report is not linked publicly; verify accessibility before using the stat with attribution externally.
+- **95% AI initiatives deliver zero ROI** (MIT, "The GenAI Divide," June 2025) — new stat from the messaging doc; not yet verified via the public MIT report. Check before external use.
+- **58% of SREs** — underlying research still not linked. (proof-points.md)
 - **`sre-best-practices-platform-engineering-trends` post not fully fetched.** Only the RSS summary was captured. Full post may have more stats / quotes.
 - **Rob Strechay's analyst affiliation** is not stated on the Dynatrace Intelligence page. Verify before attributing.
 - **Whitepaper "Full-Stack AI Observability That Increases ROI and Decreases Business Risks"** — title only, not fetched. May contain usable numbers.
@@ -135,6 +137,10 @@ Source: FY27 JuneRally SE AI Pitch deck, internal, 2026-09-16. Items explicitly 
 
 - **Autonomous SRE Agent** — Deep reasoning for root cause, impact assessment, remediation. V1 ships as a ready-made agentic workflow. No GA date stated. Framed as replacing manual 2am on-call triage. Do not present as shipped until confirmed via public docs or Dynatrace comms.
 - **Agentic Workflows** — Listed as "Preview" in the deck's GA status breakdown. Not GA; governed by preview terms.
+
+## Arize: competitor AND pending acquisition
+
+The FY27 campaign messaging v3.0 (last updated 2026-07-07) lists Arize as a named AI observability **point-solution competitor** (alongside Fiddler, Langfuse, and Generic Workflows). Arize is also the subject of Dynatrace's pending acquisition announced 2026-08-13 (see arize.md). This reflects the pre-close state of the messaging; competitive framing will need updating post-close. Do not use competitive-framing language about Arize in external content once the deal closes.
 
 ## Positioning conflicts and ambiguities (noted, not resolved)
 

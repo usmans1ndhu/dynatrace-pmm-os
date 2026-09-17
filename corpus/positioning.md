@@ -1,6 +1,6 @@
 ---
 title: Positioning — Dynatrace AI Observability
-last_verified: 2026-08-27
+last_verified: 2026-09-16
 audience: both  # ops/SRE and AI engineers; sections tagged inline
 sources:
   - https://www.dynatrace.com/solutions/ai-observability/
@@ -9,11 +9,120 @@ sources:
   - https://www.dynatrace.com/news/blog/dynatrace-intends-to-acquire-arize/
   - https://www.dynatrace.com/platform/artificial-intelligence/
   - https://www.youtube.com/live/Hr7c4DTPDa0  # video transcript, 2026-09-03
+  - FY27 Integrated Campaign Messaging - Dynatrace AI v3.0.pdf  # internal, v3.0, last updated 2026-07-07, status: work in progress, in review; do not cite as a public source
 ---
 
 # Positioning
 
 **Bottom line: Dynatrace sells AI observability as one piece of a full-stack platform — you watch your AI app in the same place you watch the servers, services, and business process it runs on. The wedge is that AI failures are not normal failures, and the teams running AI in production already run Dynatrace for everything else.**
+
+---
+
+## Official FY27 campaign messaging (internal, v3.0, 2026-07-07)
+
+> Source: FY27 Integrated Campaign Messaging - Dynatrace AI v3.0.pdf. Internal. Status: work in progress, in review. Owners: Kristi Beard, Ashley Adams, Greg Findlen, Mrudula Bangera. Do not cite as a public source; use as the authoritative internal reference for campaign language.
+
+### Official tagline
+
+**Powered by AI. Built for AI.**
+One platform — to act on answers, and to know what your AI is doing first.
+
+### Official positioning statement
+
+> Dynatrace helps enterprises operate in the AI era by combining two essential capabilities on a single platform foundation: **Built for AI (AI Observability)** for understanding and governing AI and agentic workloads and **Powered by AI** with Dynatrace Intelligence for turning trusted answers into action across modern environments. Dynatrace unifies observability, security, and business context so teams can see what is happening, understand why it is happening, and respond with confidence. This gives Dynatrace a differentiated position in the market: not just helping customers monitor increasingly complex systems, but helping them operate those systems safely, efficiently, and at increasing levels of autonomy.
+
+### Short description
+
+> Dynatrace helps enterprises observe AI workloads, govern them with confidence, and advance toward trustworthy autonomous operations on a unified platform.
+
+### Elevator pitches
+
+**Platform-level:** Dynatrace helps enterprises operate AI workloads confidently and advance toward autonomous operations with a platform that is built for AI (AI Observability) for visibility and governance and powered by AI with Dynatrace Intelligence for trusted action.
+
+**Built for AI (AI Observability):** Dynatrace Built for AI (AI Observability) helps enterprises understand, govern, and optimize AI and agentic workloads across performance, quality, compliance, cost, and guardrail adherence.
+
+**Powered by AI (Dynatrace Intelligence):** Dynatrace Intelligence turns trusted answers into action, helping enterprises progress from assisted operations to supervised automation and autonomous prevention, remediation, and optimization.
+
+### Campaign value proposition (5 bullets)
+
+- Unified data and real-time causal context through Grail and Smartscape
+- Dedicated AI Observability for AI and agentic workloads
+- Trusted, explainable AI that supports recommendations, orchestration, and autonomous action
+- Practical journey from insight to automation to autonomy
+- Open ecosystem approach spanning native and third-party agents and integrations
+
+### Why Dynatrace Intelligence can act with confidence (4 differentiators)
+
+- **Grounded, not probabilistic** — acts on causal, unified data and context, not statistical guesswork
+- **Guardrails-defined autonomy** — teams stay in control, defining how and where AI operates
+- **Full-stack, unified platform** — traces from business impact to GPU on a single platform already monitoring your environment
+- **Closed-loop execution** — continuously monitor, diagnose, and act in one connected system
+
+### Closed-loop operational model for AI workloads
+
+Two capabilities used together create a closed loop: Built for AI (AI Observability) continuously measures AI behavior across performance, quality, cost, and guardrails → Dynatrace Intelligence uses those signals to determine the right response and coordinate action → issues detected early trigger response automatically or through guided workflow.
+
+### Creative hooks (use-case level)
+
+**Built for AI (AI Observability):**
+- Observe AI with confidence
+- Full-stack visibility for AI and agentic systems
+- Trustworthy AI starts with observability
+- Govern AI workloads before issues spread
+- Understand the behavior behind the output
+- Scaling AI from evaluation to production
+
+**Powered by AI (Dynatrace Intelligence):**
+- Action based on answers, not guesses
+- Autonomous operations at your speed
+- Trusted AI for real-world operations
+- From insight to action with confidence
+- Built-in intelligence, not bolt-on AI
+
+### Customer value propositions (for sales conversations)
+
+**Built for AI:** "Dynatrace enables you to see what your AI is doing to scale with confidence."
+- Traces every AI interaction — full chain visibility from request to response across agents, RAG pipelines, and models
+- Tracks cost and performance — token usage, latency, errors, GPU utilization; quickly identify what's slow or expensive
+- Ensures trust and compliance — LLM-as-a-judge evaluations, PII detection, guardrail monitoring, and audit trails
+
+**Powered by AI:** "Trust your AI to act on answers, not guesses with Dynatrace Intelligence."
+- Detects problems automatically — identifies anomalies across the full stack without manual rules
+- Pinpoints root cause — uses causal AI and unified context to connect symptoms to source across AI and non-AI systems
+- Takes targeted action — remediates, prevents, and optimizes within guardrails defined by your teams
+
+### Market opportunity opening questions
+
+**Built for AI:** "Do you know what your AI is doing to scale it with confidence?"
+**Powered by AI:** "Do you trust your AI to act on answers, not guesses?"
+
+### Competitive framing
+
+**Against AI observability point solutions** (named: Fiddler, Arize, Langfuse, Generic Workflows): Dynatrace offers a more complete approach by connecting AI observability to full-stack observability, application context, infrastructure dependencies, and business impact. This allows teams to understand AI behavior in the context of the systems and outcomes it influences.
+
+> Note on Arize: Arize is listed as a point-solution competitor in this doc AND is the subject of Dynatrace's pending acquisition (see arize.md). This reflects the pre-close state of the messaging (doc last updated 2026-07-07); competitive framing will need to change post-close. Flagged in gaps.md.
+
+**Against Datadog + Grafana:** Called out as specific competitive targets but no messaging provided (page 14 content redacted). Existing detailed brief in corpus/competitors/datadog.md.
+
+**Against generic AIOps or workflow automation claims:** "Dynatrace offers a stronger path to autonomous operations because Dynatrace Intelligence is grounded in trusted platform data, real-time causal context, and explainable AI. Rather than layering vague AI claims on top of disconnected tools, Dynatrace helps customers move from insight to action on a unified foundation."
+
+### Partner alignment
+
+**Microsoft:** "Unified AI Operating Fabric across Azure + Dynatrace" — Azure provides secure, scalable AI infrastructure; Dynatrace adds Grail + Smartscape + Intelligence to understand, govern, and automate AI and agentic workloads. Also: Closed-loop Security & Governance with Microsoft Sentinel; Developer & AI-Native Velocity with GitHub Copilot.
+
+**Google Cloud:** Closed-loop operations for AI and cloud environments; aligns with Gemini, Vertex AI, GKE, Cloud Run; developer and platform engineering center of gravity.
+
+**AWS:** "Scale AI in production with greater confidence and less risk" using Dynatrace AI Observability + Amazon Bedrock + Amazon SageMaker + Amazon CloudWatch.
+
+### Persona targeting
+
+**Executive** (CAIO, CDO, CTO, COO, Chief Innovation Officer, VP+): Accountable for business outcomes of AI strategy — ROI, governance, risk, resilience, trust, scale. Message = de-risk AI adoption + operational leverage toward autonomy.
+
+**IT Practitioner / SRE / Platform Engineering** (including new AI-native titles: AI Reliability Engineer, ML SRE, AI Observability Engineer, Model Operations Engineer, MLOps Engineer, ML Platform Engineer, AI Platform Engineer): Responsible for reliability, automation, scale, operational efficiency. Message = reduce toil, improve MTTx, enforce guardrails, adopt automation with confidence.
+
+**Developer / AI engineer** (including new titles: AI Engineer, LLM Engineer, Agentic AI Engineer, AI Application Developer, AI Integration Engineer): Building, debugging, and shipping AI-powered services. Message = full-stack context to debug AI flows, compare models/prompts, optimize quality and cost.
+
+---
 
 ## The category
 

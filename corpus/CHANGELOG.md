@@ -8,6 +8,35 @@ Format per entry:
 
 ---
 
+## 2026-09-16 — FY27 Integrated Campaign Messaging v3.0 (14 pages) read and integrated
+
+**Source added to `sources.yaml`** — new entry under `internal:` (tier: internal, v3.0, last updated 2026-07-07, status: work in progress, in review; owners: Kristi Beard, Ashley Adams, Greg Findlen, Mrudula Bangera; 14 pages).
+
+**`positioning.md`** (`last_verified` → 2026-09-16) — major update. New section "Official FY27 campaign messaging":
+- Official tagline: "Powered by AI. Built for AI."
+- Official positioning statement (verbatim)
+- Short description + elevator pitches (platform-level, Built for AI, Powered by AI)
+- Campaign value proposition (5 bullets)
+- Why Dynatrace Intelligence can act with confidence (4 differentiators: grounded/guardrails/full-stack/closed-loop)
+- Closed-loop operational model for AI workloads
+- Creative hooks per use case
+- Customer value propositions (for sales conversations)
+- Market opportunity questions
+- Competitive framing: Fiddler, Arize, Langfuse as point solutions; Datadog+Grafana named targets; generic AIOps framing
+- Partner alignment: Microsoft (Azure + Sentinel + GitHub), Google Cloud, AWS
+- Persona targeting with new AI-native job titles
+
+**`proof-points.md`** — stats table updated:
+- 51% stat: source confirmed as "Pulse of Agentic AI Report 2026" (messaging doc v3.0)
+- Added: 95% of AI initiatives deliver zero ROI (MIT, "The GenAI Divide," June 2025)
+- Added: Global AI market $189B (2023) → $4.8T (2033)
+
+**`product-truth.md`** — new "AI Observability App — named capabilities" section: 4 app tabs, platform differentiators, new capabilities (Agent Topology and Dependency, Prompt Debugging and Management, AI Coding Agent Monitoring, RUM for AI); agent trajectory support added to evals description.
+
+**`gaps.md`** — 51% stat source partially resolved; new "Arize: competitor AND pending acquisition" conflict note; new facts-not-yet-verified items (95% MIT stat, $189B→$4.8T market size).
+
+---
+
 ## 2026-09-16 — FY27 JuneRally SE AI Pitch deck (94 pages) read and integrated
 
 **Source added to `sources.yaml`** — new `internal:` section (tier: internal, cadence: none, CONFIDENTIAL, pages: 94, last_read: 2026-09-16). Every claim sourced only from this deck requires a public-source backup before external use.

@@ -558,6 +558,28 @@ youtube:
 # external-facing copy. Every claim sourced only from these files must have a
 # matching public-source backup before it can be used externally.
 internal:
+  - name: FY27 Integrated Campaign Messaging - Dynatrace AI v3.0
+    path: "OneDrive/Documents/Messaging docs/FY27 Integrated Campaign Messaging - Dynatrace AI v3.0.pdf"
+    classification: Internal (no confidentiality marking, but internal-use messaging doc)
+    date: 2026-07-07
+    version: "3.0"
+    status_in_doc: "Work in progress, in review"
+    owners: "Kristi Beard, Ashley Adams, Greg Findlen, Mrudula Bangera"
+    pages: 14
+    tier: internal
+    cadence: none
+    owner_file: positioning.md
+    last_read: 2026-09-16
+    notes: >
+      Authoritative FY27 campaign messaging framework. Official tagline ("Powered by AI.
+      Built for AI."), positioning statement, elevator pitches by use case and persona,
+      creative hooks, market opportunity stats (51% = Pulse of Agentic AI Report 2026;
+      95% AI ROI = MIT GenAI Divide June 2025; $189B→$4.8T market), persona definitions
+      and pain points, competitive framing (Fiddler/Arize/Langfuse as point solutions;
+      Datadog+Grafana named targets), partner alignment (AWS/Google Cloud/Microsoft),
+      new capability names (Agent Topology, Agent Trajectory, Prompt Debugging, RUM for AI).
+      Arize listed as competitor here — conflicts with pending acquisition (flagged in gaps.md).
+
   - name: FY27 JuneRally SE AI Pitch deck
     path: "OneDrive/Documents/Pitch Deck/FY27 JuneRally - SE AI Pitch deck .pdf"
     classification: CONFIDENTIAL (marked on the deck)
