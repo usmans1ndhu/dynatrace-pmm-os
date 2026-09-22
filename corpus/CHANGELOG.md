@@ -8,6 +8,19 @@ Format per entry:
 
 ---
 
+## 2026-09-22 — WGU story corrected to right URL; all customer stories expanded to full depth
+
+**Sources:** https://www.dynatrace.com/customers/western-governors-university/ (correct WGU URL). All 12 customer story pages re-fetched for complete content.
+
+**`proof-points.md`** — full rewrite of all customer story sections:
+- **WGU**: Replaced incorrect entry (old URL: /wgu/; wrong student count 140,000; wrong quotes). Correct URL: /western-governors-university/. Correct data: 192,000+ students; 20% YoY enrollment growth; 500,000+ degrees. Key metric: 77% faster incident resolution using AWS DevOps Agent (28 min vs. estimated 2 hours). MTTR from days to hours. Spokespeople: Angel Marchena (Director of Technical Operations), Nate Cummings (Senior Director of Infrastructure). Technologies: AWS Lambda, Amazon EKS, AWS DevOps Agent.
+- **All other stories expanded**: Added company overview, full problem statement, complete list of Dynatrace solutions implemented with descriptions, how Dynatrace solved it, all quotes with full speaker names and titles, all technologies and integrations. Every story now contains sufficient depth to answer any question about any term mentioned.
+- Stories expanded: InPost, CDL, Accenture ALIP, Vitality, FreedomPay, Vodafone, Vestmark, Careem, CIMB Bank, Macquarie Bank, Sicredi.
+
+**`sources.yaml`** — WGU entry updated: URL corrected to /western-governors-university/; last_fetched updated to 2026-09-22; notes updated with correct facts.
+
+---
+
 ## 2026-09-17 — Five Autonomous Operations customer stories added (Careem, CIMB, Macquarie, Sicredi, WGU)
 
 **Sources:** dynatrace.com/customers/ Autonomous Operations filter. All five fetched successfully (Macquarie URL resolved as /macquarie-bank/).

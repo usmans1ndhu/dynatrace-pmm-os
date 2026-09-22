@@ -471,17 +471,21 @@ customers:
       15min→3min; 6 steps→2 steps. Developer productivity + platform engineering story.
 
   - name: WGU
-    url: https://www.dynatrace.com/customers/wgu/
+    url: https://www.dynatrace.com/customers/western-governors-university/
     industry: Education
     tag: Autonomous Operations
     tier: primary
     cadence: quarterly
     owner_file: proof-points.md
-    last_fetched: 2026-09-17
+    last_fetched: 2026-09-22
     status: ok
     notes: >
-      Qualitative; proactive detection, reduced MTTR, uninterrupted availability.
-      Only education sector story in corpus.
+      Updated 2026-09-22 with correct URL. 192,000+ students; 20% YoY enrollment growth;
+      500,000+ degrees awarded. Key metric: 77% faster incident resolution using AWS DevOps
+      Agent (28 min vs. estimated 2 hours). MTTR reduced from days to hours.
+      Spokespeople: Angel Marchena (Director of Technical Operations), Nate Cummings
+      (Senior Director of Infrastructure). Technologies: AWS, Lambda, Amazon EKS,
+      AWS DevOps Agent. Only education sector story in corpus.
 
   - name: Vestmark
     url: https://www.dynatrace.com/customers/vestmark/
