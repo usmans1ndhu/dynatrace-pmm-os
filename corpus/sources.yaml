@@ -500,6 +500,28 @@ customers:
       $1.9T AUM, 4.5M accounts. OpenLLMetry for AI agent visibility. Qualitative;
       no quantified Dynatrace outcome. SLO Guardian planned.
 
+# Third-party / analyst commentary sources. Tier: secondary. Not Dynatrace's own words.
+# Claims from these require primary-source backup before external use.
+third_party:
+  - name: EfficientlyConnected — Dynatrace Arize acquisition analysis
+    url: https://www.efficientlyconnected.com/dynatrace-arise-ai-observability-acquisition/
+    tier: secondary
+    cadence: none
+    owner_file: arize.md
+    last_fetched: 2026-09-24
+    status: ok
+    notes: >
+      Third-party analysis of the Dynatrace/Arize acquisition. Key additions to corpus:
+      Arize founders (Aparna Dhinakaran, Jason Lopatecki); Phoenix at 4,000+ enterprises;
+      ADB named as a fourth Arize asset; Steve Tack quote on "end-to-end observability
+      spanning traditional software telemetry and non-deterministic AI outputs";
+      ECI Research survey stats (48.5% prioritize compliance automation, 47.2% developer
+      velocity, 52.5% moderately concerned about vendor lock-in); 12-month integration
+      evaluation window; "operational intelligence platform" framing.
+      Article URL contains typo ("arise" not "arize") — article content refers to Arize
+      correctly throughout. Article uses past-tense "acquires" — may indicate deal closed;
+      not yet confirmed from Dynatrace primary source. Flagged in gaps.md.
+
 # Competitor sources. First-pass research done 2026-08-28 from each vendor's own
 # public pages. Each has a primary URL + a secondary URL where one was used.
 competitors:

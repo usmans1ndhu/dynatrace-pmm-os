@@ -8,6 +8,26 @@ Format per entry:
 
 ---
 
+## 2026-09-24 — Arize acquisition: secondary source integrated; arize.md, gaps.md, sources.yaml updated
+
+**Source added:** https://www.efficientlyconnected.com/dynatrace-arise-ai-observability-acquisition/ (third-party analysis, tier: secondary, fetched 2026-09-24). Note: article URL has a typo ("arise" vs. "arize") — content refers to Arize correctly.
+
+**`arize.md`** — additions:
+- Status note: secondary source uses past-tense "acquires" — may indicate deal closed; NOT confirmed from Dynatrace primary source
+- Arize founders named: Aparna Dhinakaran and Jason Lopatecki
+- **ADB** added as a fourth Arize asset (purpose-built data store) — secondary source only; not in Dynatrace's primary announcement
+- Phoenix adoption: 4,000+ enterprises (secondary source)
+- Steve Tack quote: "end-to-end observability that spans both traditional software telemetry and the non-deterministic outputs of AI agents" (secondary source; needs primary-source verification before external use)
+- New section: "Market framing from third-party analysis" — ECI Research stats (48.5% compliance priority, 47.2% developer velocity, 52.5% vendor lock-in concern), 12-month integration evaluation window, "operational intelligence platform" framing
+
+**`gaps.md`** — updates:
+- "Arize deal — unknown" section updated: deal close flagged as unconfirmed pending Dynatrace primary source; founders and Phoenix stats added; ADB flagged for verification
+- "Arize: competitor AND pending acquisition" section updated with 2026-09-24 note: do not use competitive Arize framing in new external content; instructions for what to update if/when close is confirmed from Dynatrace primary source
+
+**`sources.yaml`** — new `third_party:` section added with efficientlyconnected.com entry.
+
+---
+
 ## 2026-09-22 — WGU story corrected to right URL; all customer stories expanded to full depth
 
 **Sources:** https://www.dynatrace.com/customers/western-governors-university/ (correct WGU URL). All 12 customer story pages re-fetched for complete content.

@@ -35,14 +35,17 @@ sources:
 - **Rob Strechay's analyst affiliation** is not stated on the Dynatrace Intelligence page. Verify before attributing.
 - **Whitepaper "Full-Stack AI Observability That Increases ROI and Decreases Business Risks"** — title only, not fetched. May contain usable numbers.
 
-## Arize deal — unknown
+## Arize deal — partially updated (2026-09-24)
 
-- Purchase price and deal structure — not disclosed.
-- Expected close date — "pending regulatory approval," no date given.
-- Product roadmap: will Arize AX / Phoenix keep their names, or fold into Dynatrace branding?
-- Pricing and packaging of the combined offering.
-- Fate of the existing Arize customer base and Phoenix OSS governance.
-- Headcount / team integration.
+- **Deal close status:** Secondary source (efficientlyconnected.com, 2026-09-24) uses past-tense "acquires Arize AI" — may indicate the deal has closed. NOT YET CONFIRMED from a Dynatrace primary source (official press release, blog post, or investor comms). Verify before updating positioning language from "pending" to "closed."
+- **Arize founders:** Aparna Dhinakaran and Jason Lopatecki. (efficientlyconnected.com — secondary; low risk to use as context)
+- **Phoenix adoption:** 4,000+ enterprises use Phoenix. (efficientlyconnected.com — secondary; consistent with Phoenix being the leading OSS AI observability tool; verify if citing externally)
+- **ADB (Arize data store):** Named in secondary source as a fourth asset alongside Phoenix, AX, and OpenInference. Not named in Dynatrace's primary announcement — verify existence and spelling before using.
+- Purchase price and deal structure — still not disclosed.
+- Product roadmap: will Arize AX / Phoenix keep their names, or fold into Dynatrace branding? Still open.
+- Pricing and packaging of the combined offering. Still open.
+- Fate of the existing Arize customer base and Phoenix OSS governance. Still open (Dynatrace has committed to continuing Phoenix open-source stewardship).
+- Headcount / team integration. Still open.
 
 ## Resolved
 
@@ -138,9 +141,17 @@ Source: FY27 JuneRally SE AI Pitch deck, internal, 2026-09-16. Items explicitly 
 - **Autonomous SRE Agent** — Deep reasoning for root cause, impact assessment, remediation. V1 ships as a ready-made agentic workflow. No GA date stated. Framed as replacing manual 2am on-call triage. Do not present as shipped until confirmed via public docs or Dynatrace comms.
 - **Agentic Workflows** — Listed as "Preview" in the deck's GA status breakdown. Not GA; governed by preview terms.
 
-## Arize: competitor AND pending acquisition
+## Arize: competitor AND pending acquisition — UPDATE 2026-09-24
 
-The FY27 campaign messaging v3.0 (last updated 2026-07-07) lists Arize as a named AI observability **point-solution competitor** (alongside Fiddler, Langfuse, and Generic Workflows). Arize is also the subject of Dynatrace's pending acquisition announced 2026-08-13 (see arize.md). This reflects the pre-close state of the messaging; competitive framing will need updating post-close. Do not use competitive-framing language about Arize in external content once the deal closes.
+The FY27 campaign messaging v3.0 (last updated 2026-07-07) lists Arize as a named AI observability **point-solution competitor** (alongside Fiddler, Langfuse, and Generic Workflows). Arize is also the subject of Dynatrace's acquisition announced 2026-08-13 (see arize.md).
+
+**Status as of 2026-09-24:** A secondary source (efficientlyconnected.com) uses past-tense language suggesting the deal has closed. If confirmed from a Dynatrace primary source:
+- Remove competitive framing about Arize from all external content immediately
+- Update positioning.md competitive section to remove Arize from the point-solution list
+- Update arize.md status from "pending" to "closed"
+- The FY27 messaging v3.0 competitive language about Arize will be stale — flag to Kristi Beard / Ashley Adams for messaging update
+
+Do not use competitive-framing language about Arize in any new external content. The deal close must be confirmed from a Dynatrace primary source before updating corpus language from "pending" to "closed."
 
 ## Positioning conflicts and ambiguities (noted, not resolved)
 
