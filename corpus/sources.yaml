@@ -509,7 +509,7 @@ third_party:
     cadence: none
     owner_file: arize.md
     last_fetched: 2026-09-24
-    status: ok
+    status: superseded
     notes: >
       Third-party analysis of the Dynatrace/Arize acquisition. Key additions to corpus:
       Arize founders (Aparna Dhinakaran, Jason Lopatecki); Phoenix at 4,000+ enterprises;
@@ -671,7 +671,8 @@ internal:
       and pain points, competitive framing (Fiddler/Arize/Langfuse as point solutions;
       Datadog+Grafana named targets), partner alignment (AWS/Google Cloud/Microsoft),
       new capability names (Agent Topology, Agent Trajectory, Prompt Debugging, RUM for AI).
-      Arize listed as competitor here — conflicts with pending acquisition (flagged in gaps.md).
+      NOTE (2026-10-07): Arize listed as competitor here is NOW STALE — acquisition closed Oct 1 2026.
+      Remove Arize from competitive framing when this doc is next revised. Flag to Kristi Beard / Ashley Adams.
 
   - name: FY27 JuneRally SE AI Pitch deck
     path: "OneDrive/Documents/Pitch Deck/FY27 JuneRally - SE AI Pitch deck .pdf"
@@ -693,3 +694,60 @@ internal:
       MCP 4-step security workflow, dtctl + Claude Code customer anecdote, model
       A/B testing, guardrails monitoring, multi-modal agent tracing, closing
       positioning statement ("visibility, trust, ability to act").
+
+  - name: Customer Facing Positioning - Dynatrace + Arize
+    path: "OneDrive-Dynatrace/Documents/Arize M&A/Customer Facing Positioning - Dynatrace + Arize.pptx"
+    classification: Internal customer-facing deck (not marked confidential; intended for customer conversations)
+    date: 2026-10  # M&A folder; exact date not stamped
+    audience: Customer-facing (AEs, SEs)
+    tier: internal
+    cadence: none
+    owner_file: arize.md
+    last_read: 2026-10-07
+    slides: 6
+    notes: >
+      Post-close customer positioning deck. Key content: tagline "Two leaders. One AI lifecycle.";
+      "Build (Arize) > Run (Dynatrace) > Improve (close the loop)" lifecycle model;
+      Arize for AI/ML engineers / pre-production; Dynatrace for SRE/Platform/Ops / production;
+      "Choose Dynatrace / Choose Arize / Choose Both" decision framework;
+      AX available as managed SaaS or self-hosted in customer VPC (new detail);
+      six "better together" use cases for combined positioning.
+
+  - name: Sales FAQ for Dynatrace's Acquisition of Arize (post-close)
+    path: "OneDrive-Dynatrace/Documents/Arize M&A/sales_arize_faq_post-close-2.docx"
+    classification: CONFIDENTIAL INTERNAL USE ONLY
+    date: 2026-10-01  # references October 1 Dynapulse session on close date
+    audience: Dynatrace and Arize sellers
+    tier: internal
+    cadence: none
+    owner_file: arize.md
+    last_read: 2026-10-07
+    notes: >
+      Post-close internal sales FAQ. Key facts: deal closed Oct 1 2026; Arize sold
+      independently through H2 FY27; DPS integration 12-18 months; Salesforce integration H1 FY28;
+      Arize fiscal year ends Jan 2027; quoting via Arize AEs through H2; compensation rules
+      for DT sellers (quota attainment, accelerators, Club rules); AI CoE = ai-coe@dynatrace.com;
+      lead with Arize in Commercial for velocity; Arize competitors: LangSmith, Braintrust,
+      Langfuse, W&B, Datadog; Arize on AWS/MS/GCP marketplaces separately;
+      "Bluebox" product mentioned (meaning unclear — verify); persona-based positioning guidance
+      (Dynatrace for SRE/Platform, Arize for AI/ML engineers, both for C-suite);
+      six "better together" scenarios. Do not cite externally.
+
+  - name: Dynatrace completes acquisition of Arize (blog)
+    url: https://www.dynatrace.com/news/blog/dynatrace-completes-acquisition-of-arize/
+    classification: Public (primary source)
+    date: 2026-10-01
+    author: Steve Tack (CPO, Dynatrace)
+    tier: primary
+    cadence: none
+    owner_file: arize.md
+    last_fetched: 2026-10-07
+    status: ok
+    notes: >
+      Primary source confirming deal close. Full-lifecycle AI observability vision;
+      Arize brings AI-native tracing, evaluation, experimentation; combined lifecycle
+      (build > run > improve); OpenInference OTel code grant (June 2026);
+      AX and Phoenix remain standalone; Arize CEO Jason Lopatecki and CPO Aparna Dhinakaran
+      joining Dynatrace. No price, no integration timeline, no forward roadmap.
+      Includes Gartner MQ Leader designation reference (separate from acquisition content).
+      Contains forward-looking statement caveats including integration risk.

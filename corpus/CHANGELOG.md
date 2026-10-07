@@ -8,6 +8,39 @@ Format per entry:
 
 ---
 
+## 2026-10-07 — Arize acquisition CLOSED; full post-close corpus update
+
+**Sources added:**
+- https://www.dynatrace.com/news/blog/dynatrace-completes-acquisition-of-arize/ (primary; Steve Tack; Oct 1 2026)
+- Customer Facing Positioning - Dynatrace + Arize.pptx (internal, 6 slides; local OneDrive Arize M&A folder)
+- sales_arize_faq_post-close-2.docx (CONFIDENTIAL INTERNAL USE ONLY; Sales FAQ; local OneDrive Arize M&A folder)
+- SharePoint messaging doc (Arize _ Dynatrace messaging - Sept 18.docx, mrudula_bangera personal OneDrive) — NOT FETCHED; SharePoint personal OneDrive search returned no results; user should share file directly if content needs to be added
+
+**`arize.md`** — complete rewrite as post-close reference:
+- Status updated from "pending" to CLOSED October 1, 2026 (primary source confirmed)
+- Deal tagline: "Two leaders. One AI lifecycle."
+- Full-lifecycle vision: Build (Arize) → Run (Dynatrace) → Improve (close the loop)
+- AX now confirmed available as managed SaaS or self-hosted in customer VPC
+- Detailed positioning framework: Lead with Dynatrace (SRE/Ops/Platform), Lead with Arize (AI/ML engineers/builders), Position both (CAIO/CIO/CTO)
+- Six "better together" use cases for combined positioning
+- Arize competitor set named: LangSmith, Braintrust, Langfuse, W&B, Datadog
+- Commercial details: sold independently through H2 FY27; DPS integration 12-18 months; Salesforce H1 FY28
+- AI CoE: ai-coe@dynatrace.com
+- Marketplace availability: AWS (MPOPP qualified), MS, GCP (separate from Dynatrace)
+- Open-source commitments: Phoenix + OpenInference stewardship; OTel code grant confirmed June 2026
+
+**`positioning.md`** — competitive framing updated:
+- Arize removed from point-solution competitor list
+- Combined Arize + Dynatrace positioning section added with decision framework
+
+**`gaps.md`** — Arize sections updated:
+- "Arize deal" section: CLOSED confirmed; open items revised (price, long-term brand, Bluebox, ADB)
+- "Arize competitor" section: resolved; all items completed
+
+**`sources.yaml`** — three new internal entries added; EfficientlyConnected marked superseded; FY27 messaging v3.0 Arize competitor note flagged as stale
+
+---
+
 ## 2026-09-24 — Arize acquisition: secondary source integrated; arize.md, gaps.md, sources.yaml updated
 
 **Source added:** https://www.efficientlyconnected.com/dynatrace-arise-ai-observability-acquisition/ (third-party analysis, tier: secondary, fetched 2026-09-24). Note: article URL has a typo ("arise" vs. "arize") — content refers to Arize correctly.

@@ -98,9 +98,16 @@ Two capabilities used together create a closed loop: Built for AI (AI Observabil
 
 ### Competitive framing
 
-**Against AI observability point solutions** (named: Fiddler, Arize, Langfuse, Generic Workflows): Dynatrace offers a more complete approach by connecting AI observability to full-stack observability, application context, infrastructure dependencies, and business impact. This allows teams to understand AI behavior in the context of the systems and outcomes it influences.
+**Against AI observability point solutions** (named: Fiddler, Langfuse, Generic Workflows): Dynatrace offers a more complete approach by connecting AI observability to full-stack observability, application context, infrastructure dependencies, and business impact. This allows teams to understand AI behavior in the context of the systems and outcomes it influences.
 
-> Note on Arize: Arize is listed as a point-solution competitor in this doc AND is the subject of Dynatrace's pending acquisition (see arize.md). This reflects the pre-close state of the messaging (doc last updated 2026-07-07); competitive framing will need to change post-close. Flagged in gaps.md.
+> **Arize removed from competitor framing (2026-10-07):** Arize was listed as a point-solution competitor in the FY27 campaign messaging v3.0 (last updated 2026-07-07). Dynatrace completed the acquisition of Arize on October 1, 2026. Do not use competitive language about Arize in any content. See arize.md for full post-close details and the combined positioning framework.
+
+**Arize + Dynatrace — combined positioning (post-close, October 2026):**
+- "Two leaders. One AI lifecycle." — Arize for building and evaluating AI (pre-production); Dynatrace for running and operating AI (production)
+- Lead with Dynatrace when: persona is SRE, Platform, or Ops; entry point is production
+- Lead with Arize when: persona is AI/ML engineer or AI builder; entry point is pre-production build/eval
+- Position both when: persona is CAIO, CIO, or CTO; need spans full AI lifecycle from evaluation to production to continuous improvement
+- Source: Customer Facing Positioning deck (internal, 2026-10-07) + Sales FAQ post-close (internal, CONFIDENTIAL, 2026-10-07)
 
 **Against Datadog + Grafana:** Called out as specific competitive targets but no messaging provided (page 14 content redacted). Existing detailed brief in corpus/competitors/datadog.md.
 
