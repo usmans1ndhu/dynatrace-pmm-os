@@ -733,6 +733,34 @@ internal:
       (Dynatrace for SRE/Platform, Arize for AI/ML engineers, both for C-suite);
       six "better together" scenarios. Do not cite externally.
 
+  - name: Arize + Dynatrace Product Positioning Document (Sept 18)
+    path: "OneDrive-Dynatrace/Documents/Arize M&A/Arize _ Dynatrace messaging - Sept 18.docx"
+    classification: Internal (no confidentiality marking; intended as messaging foundation for Day 1)
+    date: 2026-09-18
+    audience: Internal — Comms, Internal Enablement, External/PR, Sales
+    tier: internal
+    cadence: none
+    owner_file: arize.md
+    last_read: 2026-10-07
+    notes: >
+      Working messaging foundation for Arize + Dynatrace Day 1. Key content:
+      Core narrative (why the products combine; AI-specific quality context + full-stack operational context);
+      External pitch language (Event Floor version + TL;DR) approved for conference use;
+      "How products fit together" including the product boundary statement
+      ("you would not run your SRE team on Arize...two fit-for-purpose tools");
+      The joint demo workflow (DT alert → SRE hand-off → Arize playground → DT confirms fix);
+      Day 1 SAY / DO NOT SAY guardrails (no "one integrated platform"; no "single pane of glass";
+      do not imply automatic data flow; do not call it "Arize by Dynatrace" externally);
+      Customer cohort table (Cohort A: DT AI Obs customers; Cohort B: DT customers on competitor;
+      Cohort C: Arize-only customers) with detailed joint value props;
+      New customer persona table (AI engineer, ML engineer, Head of AI/CAIO, SRE/Platform,
+      CIO/CTO/VP Platform, Data scientist) with lead-with guidance;
+      When to sell AX vs DT AI Obs vs both;
+      Arize competitive battle cards (Datadog/Lapdog, Langfuse, LangSmith, Braintrust)
+      with how-Arize-wins and demo anchor for each;
+      Phoenix open-source statement (approved community/social version);
+      Key prohibition: do not say Arize will stop working with Datadog/Grafana/other platforms.
+
   - name: Dynatrace completes acquisition of Arize (blog)
     url: https://www.dynatrace.com/news/blog/dynatrace-completes-acquisition-of-arize/
     classification: Public (primary source)

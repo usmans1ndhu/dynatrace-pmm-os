@@ -8,13 +8,31 @@ Format per entry:
 
 ---
 
+## 2026-10-07 — Arize Sept 18 messaging doc integrated; arize.md expanded
+
+**Source added:**
+- "Arize _ Dynatrace messaging - Sept 18.docx" (internal; product positioning document dated Sept 18 2026; local OneDrive Arize M&A folder; tier: internal). Previously inaccessible via SharePoint personal OneDrive — user provided local file path.
+
+**`arize.md`** — major additions (content not previously in corpus):
+- **Core narrative section** — richer external explanation of why the products combine; the "two views" framing (AI quality context vs. full-stack operational context)
+- **External pitch language** — Event Floor / conference-ready version + TL;DR; both approved for external use
+- **Product boundary statement** ("you would not run your SRE team on Arize... two fit-for-purpose tools for two organizations") — key for positioning conversations
+- **Joint demo workflow** — 4-step anchor scenario: DT raises alert → SRE hands to AI engineer → engineer reproduces in Arize playground + ships fix → DT confirms in production
+- **Day 1 messaging guardrails** — complete SAY / DO NOT SAY list; prohibits "one integrated platform," "single pane of glass," "Arize by Dynatrace," implications of automatic data flow, and claiming Arize will stop working with other platforms
+- **Customer cohorts A/B/C** — detailed joint value props per cohort (Dynatrace AI Obs customers; DT customers on competitor; Arize-only customers)
+- **New customer persona table** — 6 personas (AI engineer, ML engineer, Head of AI/CAIO, SRE/Platform/Ops, CIO/CTO/VP Platform, Data scientist) with what they value, lead-with guidance, and key use cases
+- **Competitive battle cards (internal)** — how Arize wins vs. Datadog (note: Datadog OSS offering named "Lapdog"), Langfuse, LangSmith, Braintrust; includes demo anchors for each and updated Datadog framing ("optimizes for observing" vs. "optimizes for improving")
+
+**`sources.yaml`** — new internal entry added for Sept 18 messaging doc under `internal:`; previous CHANGELOG entry updated to remove "NOT FETCHED" note.
+
+---
+
 ## 2026-10-07 — Arize acquisition CLOSED; full post-close corpus update
 
 **Sources added:**
 - https://www.dynatrace.com/news/blog/dynatrace-completes-acquisition-of-arize/ (primary; Steve Tack; Oct 1 2026)
 - Customer Facing Positioning - Dynatrace + Arize.pptx (internal, 6 slides; local OneDrive Arize M&A folder)
 - sales_arize_faq_post-close-2.docx (CONFIDENTIAL INTERNAL USE ONLY; Sales FAQ; local OneDrive Arize M&A folder)
-- SharePoint messaging doc (Arize _ Dynatrace messaging - Sept 18.docx, mrudula_bangera personal OneDrive) — NOT FETCHED; SharePoint personal OneDrive search returned no results; user should share file directly if content needs to be added
 
 **`arize.md`** — complete rewrite as post-close reference:
 - Status updated from "pending" to CLOSED October 1, 2026 (primary source confirmed)
