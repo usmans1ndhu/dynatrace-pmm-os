@@ -733,6 +733,34 @@ internal:
       (Dynatrace for SRE/Platform, Arize for AI/ML engineers, both for C-suite);
       six "better together" scenarios. Do not cite externally.
 
+  - name: Arize website crawl — product capabilities corpus
+    urls:
+      - https://arize.com/
+      - https://arize.com/products/ax/
+      - https://arize.com/products/alyx/
+      - https://arize.com/products/adb/
+      - https://arize.com/products/self-hosted/
+      - https://arize.com/phoenix/
+      - https://arize.com/customers/
+      - https://arize.com/pricing
+      - https://arize.com/integrations
+      - https://docs.arize.com/arize
+    tier: secondary  # Arize's own public pages; not Dynatrace primary sources
+    cadence: quarterly
+    owner_file: arize-product-truth.md
+    last_fetched: 2026-10-08
+    status: ok
+    notes: >
+      Full crawl of arize.com to build Arize product capabilities corpus.
+      Covers: AX platform (Signal, Managed Agents, Swarm Observability, Evaluation,
+      Experiment), Alyx AI engineering agent, ADB datastore, Self-hosted deployment,
+      Phoenix open-source (10k+ stars, 3M+ monthly downloads, 7k+ community),
+      OpenInference tracing standard, integrations list (30+ frameworks/providers),
+      pricing tiers (Free/Pro/Enterprise), customer proof points (LG U+, Wayfair,
+      AT&T, Handshake, Bazaarvoice, Booking.com, PagerDuty, Tripadvisor, Atropos),
+      customer quotes (MinKyu Ha/LG U+, Amir Bitaraf/Booking.com, Roger Bock/Wayfair,
+      Ralph Bird/PagerDuty). Stored in arize-product-truth.md.
+
   - name: Arize + Dynatrace Product Positioning Document (Sept 18)
     path: "OneDrive-Dynatrace/Documents/Arize M&A/Arize _ Dynatrace messaging - Sept 18.docx"
     classification: Internal (no confidentiality marking; intended as messaging foundation for Day 1)

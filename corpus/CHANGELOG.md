@@ -8,6 +8,28 @@ Format per entry:
 
 ---
 
+## 2026-10-08 — Arize website crawled; full product capabilities corpus built
+
+**Sources added:** Full crawl of arize.com (10 pages). Tier: secondary (Arize's own public pages). Fetched 2026-10-08.
+- arize.com homepage, /products/ax/, /products/alyx/, /products/adb/, /products/self-hosted/, /phoenix/, /customers/, /pricing, /integrations, docs.arize.com
+
+**`arize-product-truth.md`** — new file created:
+- **AX Platform:** Signal (how it works, plans/limits, Enterprise capabilities), Managed Agents (all pre-built templates including coming-soon, modes, harness options, what outputs are PRs not auto-deploys), Swarm Observability, Evaluation (LLM-as-a-Judge, Agent-as-a-Judge, code evals, third-party libs), Experiment (three types including Remote Agent Experiments with full technical spec)
+- **Alyx:** Full capability areas (12 categories), where it surfaces in the UI, model selection, long-term memory behavior, auto-accept toggles
+- **ADB:** Core capabilities, performance benchmarks (self-reported), architecture (Iceberg format, compute-storage separation), DataFabric connections
+- **Self-Hosted:** All deployment options (GCP/Azure/AWS/Oracle, K8s distributions), connectivity modes (connected/semi-restricted/air-gapped), security/compliance (SOC 2 Type II, ISO 27001, HIPAA-ready), SSO (SAML 2.0), cost model
+- **Phoenix:** Community stats (10k+ stars, 3M+ monthly downloads, 7k+ community, 22M+ OTEL downloads/month), full feature set, deployment modes, quick-start for coding agents
+- **OpenInference:** Full language/framework instrumentation list (Python, TypeScript, Java, Go — 30+ providers)
+- **Integrations:** Full list by category (LLM providers, Python agent frameworks, JS frameworks, Java, coding agents, eval libraries, platforms)
+- **Pricing:** Complete feature comparison across Free/Pro/Enterprise tiers; all Enterprise-only capabilities listed
+- **Customer proof:** LG U+, Wayfair, AT&T, Handshake, Bazaarvoice, TheFork, Booking.com, PagerDuty, Tripadvisor, Atropos Health — with metrics and named quotes
+- **Technical specs summary table**
+- **What to watch:** Upcoming features (Agent-as-a-Judge additional harnesses, Managed Agent templates, sandbox options)
+
+**`sources.yaml`** — new secondary entry added for Arize website crawl pointing to arize-product-truth.md
+
+---
+
 ## 2026-10-07 — Arize Sept 18 messaging doc integrated; arize.md expanded
 
 **Source added:**
